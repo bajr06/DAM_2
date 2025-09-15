@@ -14,34 +14,34 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.aplicacion_1.ui.theme.Aplicacion_1Theme
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            Aplicacion_1Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
-    }
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		enableEdgeToEdge()
+		setContent {
+			Aplicacion_1Theme {
+				Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+					Greeting(
+						name = "Android",
+						modifier = Modifier.padding(innerPadding)
+					)
+				}
+			}
+		}
+	}
 }
 
 @Composable // Funciones que usan el Jet Pack.
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier // Parámetro para situarlo en la pantalla del dispositivo.
-    )
+	Text(
+		text = "Hello $name!",
+		modifier = modifier // Parámetro para situarlo en la pantalla del dispositivo.
+	)
 }
 
 @Preview(showBackground = true) // Poder ser vista en el dispositivo.
 @Composable
 fun GreetingPreview() {
-    Aplicacion_1Theme {
-        Greeting("Android")
-    }
+	Aplicacion_1Theme {
+		Greeting("Android")
+	}
 }

@@ -1,4 +1,4 @@
-package com.example.holamundo
+// package com.example.holamundo
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -20,37 +20,37 @@ import androidx.compose.ui.unit.dp
 // import com.example.holamundo.ui.theme.HolaMundoTheme
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge ()
-        setContent {
-            DosTextos()
-        }
-    }
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		enableEdgeToEdge ()
+		setContent {
+			DosTextos()
+		}
+	}
 }
 
 @Composable
 fun DosTextos() {
-    Column(modifier = Modifier.fillMaxSize().padding(top = 40.dp)) {
-        Row() {
-            Text(text = "Tercer texto")
-            Spacer(modifier = Modifier.width(20.dp))
-            Text(text = "Cuarto texto")
-        }
-        Spacer(modifier = Modifier.height(30.dp))
+	Column(modifier = Modifier.fillMaxSize().padding(top = 40.dp)) {
+		Row() {
+			Text(text = "Tercer texto")
+			Spacer(modifier = Modifier.width(20.dp))
+			Text(text = "Cuarto texto")
+		}
+		Spacer(modifier = Modifier.height(30.dp))
 
-        Text(text = "Primer texto")
-        Text(text = "Segundo texto")
-    }
+		Text(text = "Primer texto")
+		Text(text = "Segundo texto")
+	}
 
-    /* Row(modifier = Modifier.padding(top = 25.dp)) {
-        Text(text = "Tercer texto")
-        Text(text = "Cuarto texto")
-    } */
+	/* Row(modifier = Modifier.padding(top = 25.dp)) {
+		Text(text = "Tercer texto")
+		Text(text = "Cuarto texto")
+	} */
 }
 
 @Preview
 @Composable
 fun DosTextosVerticalPreview() {
-    DosTextos()
+	DosTextos()
 }
