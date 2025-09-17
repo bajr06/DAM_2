@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io*;
 
 public class Ejercicio3 {
 	static Scanner entrada = new Scanner(System.in);
@@ -11,6 +12,14 @@ public class Ejercicio3 {
 		System.out.println("Ahora introduzca el nombre del fichero que quieres que cree:");
 		String nuevoFichero = entrada.nextLine();
 
+		File directorio = new File(nombreDirectorio);
 
+		if(directorio.exists()) {
+			File fichero = new File(nuevoFichero);
+
+			System.out.println("Se ha creado el fichero (" + fichero.createNewFile() + ")");
+		} else {
+			System.out.println("No se ha encontrado el directorio.");
+		}
 	}
 }

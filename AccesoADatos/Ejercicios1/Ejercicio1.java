@@ -1,4 +1,4 @@
-/ package AccesoADatos1;
+// package AccesoADatos1;
 
 import java.util.Scanner;
 import java.io.*;
