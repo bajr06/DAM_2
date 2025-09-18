@@ -1,6 +1,10 @@
 // package Ejercicio_Repaso_2;
 
+import java.util.Scanner;
+
 public class Ejercicio6 {
+	static Scanner entrada = new Scanner(System.in);
+
 	public static void main(String [] args) {
 		Profesor p1 = new Profesor("02254654N", "Santiago", "Abascal", 1500.8, 5, false);
 		Profesor p2 = new Profesor("024656456P", "Alberto", "Nunez Feijo", 1300.6, 3, true);
@@ -23,5 +27,16 @@ public class Ejercicio6 {
 	
 		System.out.println(al1.toString());
 		System.out.println(al2.toString());
+	}
+
+	private static Alumno altaAlumno() {
+		System.out.println("Introduzca los datos pedidos siguiendo el siguiente orden (dando enter cada vez que rellenes uno).");
+		System.out.println("DNI, Nombres, Apellidos, Fecha de Nacimiento, Sexo, Si es repetidor o no, y los módulos en los que está");
+
+		String dni = entrada.nextLine();
+		String nombres = entrada.nextLine();
+		String apellidos = entrada.nextLine();
+		String f_nacimiento = entrada.nextLine();
+		String sexo
 	}
 }
