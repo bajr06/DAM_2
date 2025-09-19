@@ -2,7 +2,7 @@
 
 public class LazaProcesos{
 	public static void main(String [] args) {
-		String ruta = "C:/windows/system32/notepad.exe";
+		String ruta = "C:/Users/DAM/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/System Tools";
 		
 		GeneradorProceso lanzador = new GeneradorProceso();
 		lanzador.ejecutar(ruta);
