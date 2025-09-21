@@ -1,19 +1,17 @@
 import java.util.Scanner;
-import java.io*;
+import java.io.*;
 
-public class Ejercicio3 {
+public class Ejercicio4 {
 	static Scanner entrada = new Scanner(System.in);
 
 	public static void main(String [] args) {
-		File fichero = new fichero(HolaMundo);
+		File fichero = new File("Prueba");
 
 		if(fichero.isDirectory()) {
 			File [] ficheros = fichero.listFiles();
-			int contador = 0;
 
-			while(fichero != null) {
-				System.out.println(contador + " " + ficheros[contador].getName());
-				contador++;
+			for(int i = 0; i < ficheros.length; i++) {
+				System.out.println(i + " " + ficheros[i].getName());
 			}
 		} else {
 			System.out.println("No existe el directorio.");

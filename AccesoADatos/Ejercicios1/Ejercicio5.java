@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.io*;
+import java.io.*;
 
 public class Ejercicio5 {
 	static Scanner entrada = new Scanner(System.in);
@@ -13,7 +13,7 @@ public class Ejercicio5 {
 		boolean respuestaPermisos = comprobarPermisos(fichero);
 
 		if(respuestaPermisos) {
-			cambiarPermisos(fichero)
+			cambiarPermisos(fichero);
 		}
 	}
 
@@ -22,7 +22,7 @@ public class Ejercicio5 {
 		       	char lectura = permisoLectura(fichero);
 			char escritura = permisoEscritura(fichero);
 			char ejecucion = permisoEjecucion(fichero);
-			String permisos = lectura + escritura + ejecucion;
+			String permisos = lectura + "" + escritura + "" + ejecucion;
 
 			System.out.println("Los permisos que tiene el fichero son: " + permisos);
 
@@ -59,9 +59,21 @@ public class Ejercicio5 {
 	}
 
 	private static void cambiarPermisos(File fichero) {
-		System.out.println("¿Deseas cambiar los permisos del fichero?");
+		System.out.println("¿Qué permiso le quieres cambiar?");
 		String decision = entrada.nextLine();
 
-		if()
+		switch(decision) {
+			case "r":
+				fichero.setReadable(false);
+				break;
+			case "w":
+				fichero.setWritable(false);
+				break;
+			case "x":
+				fichero.setExecutable(false);
+				break;
+			default:
+				System.out.println("Error al realizarlo.");
+		}
 	}
 }

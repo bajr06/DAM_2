@@ -1,10 +1,11 @@
 import java.util.Scanner;
-import java.io*;
+import java.io.*;
+import java.io.IOException;
 
 public class Ejercicio3 {
 	static Scanner entrada = new Scanner(System.in);
 
-	public class void main(String [] args) {
+	public static void main(String [] args) {
 		System.out.println("¡Bienvenidos al creador de Directorios!");
 		System.out.println("Introduce el nombre del directorio en donde quieres crear el fichero:");
 		String nombreDirectorio = entrada.nextLine();
@@ -15,9 +16,13 @@ public class Ejercicio3 {
 		File directorio = new File(nombreDirectorio);
 
 		if(directorio.exists()) {
-			File fichero = new File(nuevoFichero);
+			File fichero = new File(nombreDirectorio + "/" + nuevoFichero);
 
-			System.out.println("Se ha creado el fichero (" + fichero.createNewFile() + ")");
+			try {
+				System.out.println("Se ha creado el fichero (" + fichero.createNewFile() + ")");
+			} catch(IOException e) {
+				e.printStackTrace();
+			}
 		} else {
 			System.out.println("No se ha encontrado el directorio.");
 		}
