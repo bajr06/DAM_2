@@ -3,21 +3,24 @@ package Ejercicio1;
 import java.util.Scanner;
 import java.io.*;
 
-public class Ejercicio1 {
-	static Scanner entrada = new Scanner(System.in);
-	
+public class Ejercicio1Corregido {
 	public static void main(String[] args) {
-		System.out.println("Bienvenido.");
+		Scanner sc = new Scanner(System.in);
+
 		System.out.println("Introduzca el nombre del directorio al que le quieres ver que ficheros tiene: ");
 		String directorio = entrada.nextLine();
 		
 		File fichero = new File(directorio);
 		
 		if(fichero.exists() && directorio.isDirectory()) {
-			File [] ficheros = fichero.list();
+			String [] lista = fichero.list();
 			
-			for(int i = 0; i < ficheros.length; i++) {
-				System.out.println(ficheros[i].getName());
+			if(lista != null) {
+				for(String elemento : lista) {
+					System.out.println(lista[elemento].getName());
+				}
+			} else {
+				System.out.println("No hay ficheros dentro del directorio.");
 			}
 		} else {
 			fichero.mkdir();

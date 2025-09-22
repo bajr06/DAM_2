@@ -1,3 +1,5 @@
+package Ejericio1;
+
 import java.util.Scanner;
 import java.io.*;
 
