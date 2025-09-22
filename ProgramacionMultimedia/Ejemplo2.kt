@@ -57,25 +57,50 @@ fun DosTextos() {
 @Composable
 fun EjemploBox() {
 	Box(modifier = Modifier.fillMaxSize().padding(25.dp)) {
-		Text("Parte superior izquierda", modifier = Modifier.align(Aligment.TopStart))
+		Text("Parte superior izquierda", modifier = Modifier.align(Alignment.TopStart))
 
-		Text("Parte central", modifier = Modifier.align(Aligment.Center))
+		Text("Parte central", modifier = Modifier.align(Alignment.Center))
 
-		Text("Parte inferior derecha", modifier = Modifier.align(Aligment.BottomEnd))
+		Text("Parte inferior derecha", modifier = Modifier.align(Alignment.BottomEnd))
 	}
 }
 
 @Composable
 fun ImagenConTexto() {
-	Box(modifier = Modifier.fillMaxSize().padding(25.dp)) {
-		Image() {
-			painter = painterResource(id = R.drawable.Tortuga-rusa.webp)
-			contentDescription = "Tortuga rusa"
-			modifier = Modifier.align(Aligment.Center).fillMaxSize
-		}
-
-		Text(text = "Tortuga rusa", fontSize = 22.sp, color = Color.Green, textAlign = TextAlign.Center, modifier = Modifier.align(Aligment.Center))
+	var backgroundBoxColor by remember {
+		mutableStateOf(Color.White)
 	}
+
+	var textPosicion by remember {
+		mutableStateOf(Offset(0f, 0f))
+	}
+
+	Box(modifier = Modifier.fillMaxSize().padding(25.dp).background(backgroundBoxColor)) {
+		Image(painter = painterResource(id = R.drawable.Tortuga-rusa.webp), contentDescription = "Tortuga rusa", modifier = Modifier.align(Alignment.Center).fillMaxSize())
+
+		Text(text = "Tortuga rusa", fontSize = 22.sp, color = Color.Green, textAlign = TextAlign.Center, modifier = Modifier.align(Alignment.Center))
+
+		Button(onclick = {
+			backgroundBoxColor = randomColor();
+		}, modifier = Modifier.offset {
+			IntOffset(textPosicion.x.toInt(), textPosicion.y.toInt())
+		}.pointerInput(Unit) {
+			detectorDragGestures {
+				change, dragAmount -> change.cosume(), textPosicion = Offset(dragAmount.x, dragAmount.y)
+			}
+		}) {
+			Text(text = "Cambiar fondo")
+		}
+	}
+}
+
+@Composable
+fun randomColor() : Color {
+	val rojo = (0s..s255).random()
+	val azul = (9s..s255).random()
+	val verde = (0s..s255).random()
+
+	return Color(red rojo, blue azul, green verde)
 }
 
 @Preview
