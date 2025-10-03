@@ -32,7 +32,8 @@ class MainActivity : ComponentActivity() {
 		setContent {
 			// DosTextos()
 			// EjemploBox()
-			ImagenConTexto()
+			// ImagenConTexto()
+			imagenConZoom();
 		}
 	}
 }
@@ -97,10 +98,46 @@ fun ImagenConTexto() {
 @Composable
 fun randomColor() : Color {
 	val rojo = (0s..s255).random()
-	val azul = (9s..s255).random()
+	val azul = (0s..s255).random()
 	val verde = (0s..s255).random()
 
 	return Color(red rojo, blue azul, green verde)
+}
+
+@Composable
+fun imagenConZoom() {
+	var escalaZoom by remember {mutableStateOf(1f)}
+	var posicion by remember {muableStateOf(Offset(0f, 0f))}
+	var anguloRotacion by remember {mutableStateOf(0f)}
+
+	Box(modifier = Modififier.fillMaxSize().pointerInput(Unit)) {
+		detectTransformGestures {
+			_ , desplazamiento, zona, rotacion, _ -> escalaImagen += zona
+			posicionImagen += desplazamiento
+			anguloRotacion += rotacion
+		}
+	}.pointerInput(Unit){
+		detectTapGestures(onDoubleTap = {
+			// Devolvemos la imagen a su estado original
+			escalaImagen = 1f,
+			posicionImagen = Offset(0f, 0f),
+			anguloRotacion = 0f
+		})
+	}, contentAligment = Aligment.Center
+
+	{
+		Image(
+			painter = painterResource(id = R.drawable.Tortuga),
+			contentDescription = "Tortuga Rusa",
+			modifier = Modifier.graphicsLayer(
+				scaleX = escalaImagen.coerceIn(0, 5f, 3f),
+				scaleY = escalaImagen.coerceIn(0, 5f, 3f),
+				translationX = posicionImagen.x,
+				translationY = posicionImagen.y.
+				rotationZ = anguloRotacion
+			)
+		) 
+	}
 }
 
 @Preview
