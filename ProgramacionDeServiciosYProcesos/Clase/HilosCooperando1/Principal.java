@@ -17,8 +17,8 @@ public class Principal {
 		for(Thread h : hilo)  
 			try {
 				h.join();
-			} cacth(IntterupedEception i2) {
-				ptintf("Error.");
+			} cacth(IntterupedEception ie) {
+				ie.printStackTrace();
 			}
 	}
 }
