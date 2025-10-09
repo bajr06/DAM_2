@@ -7,7 +7,7 @@ public class Hilo implements Runnable {
 	Hilo(int numHilo, int miParte, Contador C) {
 		this.numHilo = numHilo;
 		this.miParte = miParte;
-		this.cont = c;
+		cont = c;
 	}
 
 	public int getMiCuenta() {
