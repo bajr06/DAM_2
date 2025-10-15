@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<personas>
+	<persona>
+		<nombre>Ana</nombre>
+		<edad>28</edad>
+		<ciudad>Madrid</ciudad>
+	</persona>
+
+	<persona>
+		<nombre>Luis</nombre>
+		<edad>35</edad>
+		<ciudad>Barcelona</ciudad>
+	</persona>
+</personas>

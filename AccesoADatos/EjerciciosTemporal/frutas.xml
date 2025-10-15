@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frutas>
+	<fruta>
+		<nombre>Manzana</nombre>
+		<tipo>Pomácea</tipo>
+		<color>Rojo</color>
+		<origen>España</origen>
+		<precio>1.50</precio>
+		<temporada>Otoño</temporada>
+		<nutrientes>
+			<nutriente>Fibra</nutriente>
+			<nutriente>Vitamina C</nutriente>
+		</nutrientes>
+	</fruta>
+	
+	<fruta>
+		<nombre>Plátano</nombre>
+		<tipo>Tropical</tipo>
+		<color>Amarillo</color>
+		<origen>Ecuador</origen>
+		<precio>1.20</precio>
+		<temporada>Todo el año</temporada>
+		<nutrientes>
+			<nutriente>Potasio</nutriente>
+			<nutriente>Vitamina B6</nutriente>
+		</nutrientes>
+	</fruta>
+	
+	<fruta>
+		<nombre>Naranja</nombre>
+		<tipo>Cítrico</tipo>
+		<color>Naranja</color>
+		<origen>Valencia</origen>
+		<precio>0.80</precio>
+		<temporada>Invierno</temporada>
+		<nutrientes>
+			<nutriente>Vitamina C</nutriente>
+			<nutriente>Ácido fólico</nutriente>
+		</nutrientes>
+	</fruta>
+	
+	<fruta>
+		<nombre>Uva</nombre>
+		<tipo>Bayas</tipo>
+		<color>Morado</color>
+		<origen>Chile</origen>
+		<precio>2.00</precio>
+		<temporada>Verano</temporada>
+		<nutrientes>
+			<nutriente>Antioxidantes</nutriente>
+			<nutriente>Resveratrol</nutriente>
+		</nutrientes>
+	</fruta>
+	
+	<fruta>
+		<nombre>Fresa</nombre>
+		<tipo>Bayas</tipo>
+		<color>Rojo</color>
+		<origen>México</origen>
+		<precio>1.80</precio>
+		<temporada>Primavera</temporada>
+		<nutrientes>
+			<nutriente>Vitamina C</nutriente>
+			<nutriente>Antocianinas</nutriente>
+		</nutrientes>
+	</fruta>
+
+	<fruta>
+		<nombre>Kiwi</nombre>
+		<tipo>Tropical</tipo>
+		<color>Verde</color>
+		<origen>Italia</origen>
+		<precio>2.20</precio>
+		<temporada>Invierno</temporada>
+		<nutrientes>
+			<nutriente>Vitamina C</nutriente>
+			<nutriente>Vitamina E</nutriente>
+		</nutrientes>
+	</fruta>
+	
+	<fruta>
+		<nombre>Mango</nombre>
+		<tipo>Tropical</tipo>
+		<color>Naranja</color>
+		<origen>India</origen>
+		<precio>2.50</precio>
+		<temporada>Verano</temporada>
+		<nutrientes>
+			<nutriente>Vitamina A</nutriente>
+			<nutriente>Beta-caroteno</nutriente>
+		</nutrientes>
+	</fruta>
+
+	<fruta>
+		<nombre>Piña</nombre>
+		<tipo>Tropical</tipo>
+		<color>Amarillo</color>
+		<origen>Costa Rica</origen>
+		<precio>1.70</precio>
+		<temporada>Verano</temporada>
+		<nutrientes>
+			<nutriente>Bromelina</nutriente>
+			<nutriente>Vitamina C</nutriente>
+		</nutrientes>
+	</fruta>
+
+	<fruta>
+		<nombre>Cereza</nombre>
+		<tipo>Drupa</tipo>
+		<color>Rojo</color>
+		<origen>España</origen>
+		<precio>3.00</precio>
+		<temporada>Primavera</temporada>
+		<nutrientes>
+			<nutriente>Melatonina</nutriente>
+			<nutriente>Antioxidantes</nutriente>
+		</nutrientes>
+	</fruta>
+
+	<fruta>
+		<nombre>Pera</nombre>
+		<tipo>Pomácea</tipo>
+		<color>Verde</color>
+		<origen>Argentina</origen>
+		<precio>1.40</precio>
+		<temporada>Otoño</temporada>
+		<nutrientes>
+			<nutriente>Fibra</nutriente>
+			<nutriente>Vitamina K</nutriente>
+		</nutrientes>
+	</fruta>
+</frutas>
