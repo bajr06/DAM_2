@@ -1,32 +1,33 @@
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
+package Ejercicio2;
+
+import javax.xml.parsers.*;
 import org.w3c.dom.*;
-import java.io.File;
+import java.io.*;
 import java.util.*;
 
 public class FrutasMain {
-    public static void main(String[] args) {
-        try {
-            File archivo = new File("frutas.txt");
-            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-            Document doc = builder.parse(archivo);
-            doc.getDocumentElement().normalize();
+	public static void main(String[] args) {
+		try {
+			File archivo = new File("frutas.txt");
+			DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+			Document doc = builder.parse(archivo);
+			
+			doc.getDocumentElement().normalize();
 
-            NodeList listaFrutas = doc.getElementsByTagName("fruta");
+			NodeList listaFrutas = doc.getElementsByTagName("fruta");
+			Scanner scanner = new Scanner(System.in);
 
-            Scanner scanner = new Scanner(System.in);
-
-            System.out.println("Todas las frutas:");
-            for (int i = 0; i < listaFrutas.getLength(); i++) {
-                Element fruta = (Element) listaFrutas.item(i);
-                String nombre = fruta.getElementsByTagName("nombre").item(0).getTextContent();
-                String tipo = fruta.getElementsByTagName("tipo").item(0).getTextContent();
-                String color = fruta.getElementsByTagName("color").item(0).getTextContent();
-                String origen = fruta.getElementsByTagName("origen").item(0).getTextContent();
-                double precio = Double.parseDouble(fruta.getElementsByTagName("precio").item(0).getTextContent());
-                String temporada = fruta.getElementsByTagName("temporada").item(0).getTextContent();
-
-                NodeList nutrientes = fruta.getElementsByTagName("nutriente");
+			System.out.println("Todas las frutas:");
+			
+			for (int i = 0; i < listaFrutas.getLength(); i++) {
+				Element fruta = (Element) listaFrutas.item(i);
+				String nombre = fruta.getElementsByTagName("nombre").item(0).getTextContent();
+				String tipo = fruta.getElementsByTagName("tipo").item(0).getTextContent();
+				String color = fruta.getElementsByTagName("color").item(0).getTextContent();
+				String origen = fruta.getElementsByTagName("origen").item(0).getTextContent();
+				double precio = Double.parseDouble(fruta.getElementsByTagName("precio").item(0).getTextContent());
+				String temporada = fruta.getElementsByTagName("temporada").item(0).getTextContent();
+				NodeList nutrientes = fruta.getElementsByTagName("nutriente");
                 List<String> listaNutrientes = new ArrayList<>();
                 for (int j = 0; j < nutrientes.getLength(); j++) {
                     listaNutrientes.add(nutrientes.item(j).getTextContent());
