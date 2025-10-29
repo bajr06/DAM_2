@@ -17,10 +17,18 @@ public class main {
 			System.out.println("Se ha conectado a la Base de Datos.");
 
 			// 3. Crear un Statement
-			Statement sentencia = conexion.createStatement();
-			// String consulta = "select * from Usuario";
+			/* Statement sentencia = conexion.createStatement();
+		 	String consulta = "select * from Usuario";
 			String consulta = "select * from Usuario where IdUsuario = 1 or 1 = 1";
-			ResultSet resultado = sentencia.exceptQuery(consulta);
+			ResultSet resultado = sentencia.exceptQuery(consulta); */
+
+			// 3.1 Crear PreparedStatement
+			String consulta = "select * from Usuario where IdUsuario = ? or Nombre = ?";
+			PreparedStatement sentencia = conexion.prepareStantament(consulta);
+			int numero = 1;
+			sentencia.setInt(1, numero);
+			sentencia.setString(2, "Leo");
+			ResultSet resultado = sentencia.executeQuery(); // Permite solo consultas.
 
 			// 4. Mostrar resultados
 			while(resultado.next()) {
