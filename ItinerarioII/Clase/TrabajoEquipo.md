@@ -1,3 +1,5 @@
+# Trabajos en equipo
+
 ## Las 5 C's del trabajo en equipo
 - Confianza.
 - Comunicación.
