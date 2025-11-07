@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/songoku/DAM_2/AccesoADatos/PracticaFinalTema1/PracticaFinalTema1.csproj": {}
+    "/home/cfgs/DAM_2/AccesoADatos/PracticaFinalTema1/PracticaFinalTema1.csproj": {}
   },
   "projects": {
-    "/home/songoku/DAM_2/AccesoADatos/PracticaFinalTema1/PracticaFinalTema1.csproj": {
+    "/home/cfgs/DAM_2/AccesoADatos/PracticaFinalTema1/PracticaFinalTema1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/songoku/DAM_2/AccesoADatos/PracticaFinalTema1/PracticaFinalTema1.csproj",
+        "projectUniqueName": "/home/cfgs/DAM_2/AccesoADatos/PracticaFinalTema1/PracticaFinalTema1.csproj",
         "projectName": "PracticaFinalTema1",
-        "projectPath": "/home/songoku/DAM_2/AccesoADatos/PracticaFinalTema1/PracticaFinalTema1.csproj",
-        "packagesPath": "/home/songoku/.nuget/packages/",
-        "outputPath": "/home/songoku/DAM_2/AccesoADatos/PracticaFinalTema1/obj/",
+        "projectPath": "/home/cfgs/DAM_2/AccesoADatos/PracticaFinalTema1/PracticaFinalTema1.csproj",
+        "packagesPath": "/home/cfgs/.nuget/packages/",
+        "outputPath": "/home/cfgs/DAM_2/AccesoADatos/PracticaFinalTema1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/songoku/.nuget/NuGet/NuGet.Config"
+          "/home/cfgs/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
