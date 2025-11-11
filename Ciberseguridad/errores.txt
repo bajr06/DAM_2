@@ -1,0 +1,6 @@
+/tmp:
+snap-private-tmp
+systemd-private-eb7e7343d79844e4893f60eb4b733cfd-systemd-logind.service-Q9yJMg
+systemd-private-eb7e7343d79844e4893f60eb4b733cfd-systemd-resolved.service-is3Nae
+systemd-private-eb7e7343d79844e4893f60eb4b733cfd-systemd-timesyncd.service-6NJfov
+systemd-private-eb7e7343d79844e4893f60eb4b733cfd-wsl-pro.service-VoHVIJ
