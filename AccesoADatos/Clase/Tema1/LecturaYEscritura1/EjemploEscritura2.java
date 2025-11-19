@@ -1,11 +1,11 @@
-// package AccesoADatos1;
+package LecturaYEscritura1;
 
 import java.io.*;
 
-public class Ejemplo {
+public class EjemploEscritura2 {
 	public static void main(String[] args) {
 		// Dentro de 'new File' se pone la ruta del archivo o fichero.
-		File fichero = new File("FicheroEjemplo.txt");
+		File fichero = new File("AccesoADatos/Clase/Tema1/LecturaYEscritura1/FicheroEjemplo2.txt");
 		
 		if(!fichero.exists()) {
 			try {
@@ -22,7 +22,7 @@ public class Ejemplo {
 
 			try {
 				// FileWriter escritura = new FileWriter(fichero);
-				BufferedWriter pw = new BufferedWriter(new FicheroWriter(fichero, true));
+				BufferedWriter pw = new BufferedWriter(new FileWriter(fichero, true));
 
 				for(int i = 0; i < 10; i++) {
 					pw.write("Linea: " + i);
@@ -42,7 +42,7 @@ public class Ejemplo {
 					System.out.println(linea);
 				}
 
-				lector.close();/
+				lector.close();
 				
 			} catch(IOException e) {
 				e.getMessage();

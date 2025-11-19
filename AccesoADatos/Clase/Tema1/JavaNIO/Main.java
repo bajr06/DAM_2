@@ -1,6 +1,9 @@
 package JavaNIO;
 
 import java.nio.*;
+import java.nio.file.*;
+import java.io.*;
+import java.util.*;
 
 public class Main {
 	public static void LeerFiles() {
@@ -12,7 +15,7 @@ public class Main {
 			System.out.println(contenido);
 
 
-			List<String> listaContenido = File.readAllLines(ruta);
+			List<String> listaContenido = Files.readAllLines(ruta);
 
 			for(String linea : listaContenido) {
 				System.out.println("Linea: " + linea);

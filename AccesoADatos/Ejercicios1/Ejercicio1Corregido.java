@@ -1,30 +1,35 @@
-package Ejercicio1;
+// package Ejercicios1;
 
-import java.util.Scanner;
+import java.util.*;
 import java.io.*;
 
 public class Ejercicio1Corregido {
+	// Programa que liste elementos de un directorio.
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Introduzca el nombre del directorio al que le quieres ver que ficheros tiene: ");
-		String directorio = entrada.nextLine();
+		System.out.println("Introduzca el directorio del que quieras imprimir los elementos:");
+		String ruta = sc.nextLine(); // Introducción de ruta que vamos a comprobar.
 		
-		File fichero = new File(directorio);
-		
-		if(fichero.exists() && directorio.isDirectory()) {
-			String [] lista = fichero.list();
+		File directorio = new File("AccesoADatos/Ejercicios1/" + ruta);
+		// Comprobar si la ruta es un directorio.
+		if(directorio.exists() && directorio.isDirectory()) {
+			String [] lista = directorio.list();
+			// Puede ocurrir dos casos que no hay que recorrer.
+			// 1.- Lista = null: no tiene elementos.
+			// 2.- Podría ocurrir que tenga longitud 0.
 			
 			if(lista != null) {
 				for(String elemento : lista) {
-					System.out.println(lista[elemento].getName());
+					System.out.println("Elementos de la lista " + elemento + ", con tamaño: " + elemento.length());
 				}
 			} else {
-				System.out.println("No hay ficheros dentro del directorio.");
+				System.out.println("Directorio vacío.");
 			}
 		} else {
-			fichero.mkdir();
-			System.out.println("No existita, pero ahora si.");
+			System.out.println("No existe o no es una dirección.");
 		}
+
+		sc.close();
 	}
 }

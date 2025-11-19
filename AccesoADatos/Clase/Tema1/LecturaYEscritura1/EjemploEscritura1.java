@@ -1,11 +1,11 @@
-// package AccesoADatos1;
+package LecturaYEscritura1;
 
 import java.io.*;
 
-public class Ejemplo {
+public class EjemploEscritura1 {
 	public static void main(String[] args) {
 		// Dentro de 'new File' se pone la ruta del archivo o fichero.
-		File fichero = new File("FicheroEjemplo.txt");
+		File fichero = new File("AccesoADatos/Clase/Tema1/LecturaYEscritura1/FicheroEjemplo1.txt");
 		
 		if(!fichero.exists()) {
 			try {
