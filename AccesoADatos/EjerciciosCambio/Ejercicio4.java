@@ -1,4 +1,4 @@
-// package Ejericio1;
+// package Ejericios1;
 
 import java.util.Scanner;
 import java.io.*;
