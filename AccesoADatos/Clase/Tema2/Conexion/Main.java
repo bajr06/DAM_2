@@ -2,7 +2,7 @@ package Conexion;
 
 import java.sql.*;
 
-public class main {
+public class Main {
 	public static void main(String [] args) {
 		String url = "jdbc:mysql://localhost::3306/mydb";
 		String usuario = "root";
@@ -24,7 +24,7 @@ public class main {
 
 			// 3.1 Crear PreparedStatement
 			String consulta = "select * from Usuario where IdUsuario = ? or Nombre = ?";
-			PreparedStatement sentencia = conexion.prepareStantament(consulta);
+			PreparedStatement sentencia = conexion.prepareStatement(consulta);
 			int numero = 1;
 			sentencia.setInt(1, numero);
 			sentencia.setString(2, "Leo");
@@ -37,7 +37,7 @@ public class main {
 				Date fecha = resultado.getDate("FechaNacimiento");
 				String Genero = resultado.getString("Genero");
 
-				System.out.println("IdUsuario: " + idUsuario + ", Nombre: " + Nombre + ", Genero: " + Genero);
+				System.out.println("IdUsuario: " + idUsuario + ", Nombre: " + Nombre + ", Fecha: " + fecha + ", Genero: " + Genero);
 			}
 
 		} catch(Exception e) {

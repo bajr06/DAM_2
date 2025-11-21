@@ -1,4 +1,4 @@
-// package Prueba;
+package Ejercicios1;
 
 import java.util.Scanner;
 import java.io.*;

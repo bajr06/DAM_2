@@ -1,4 +1,4 @@
-package Conexion;
+package Ejercicio1;
 
 import java.sql.*;
 import java.util.Scanner;

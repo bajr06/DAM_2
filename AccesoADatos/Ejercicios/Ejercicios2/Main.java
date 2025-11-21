@@ -1,8 +1,9 @@
-package Ejercicio2;
+package Ejercicios2;
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
 
 public class Main {
+	/*
 	public static int posicion(double precio, ArrayList<Fruta> frutas) {
 		int posicion = -1;
 		int valorAnterior = 0;
@@ -77,4 +78,5 @@ public class Main {
 			ioe.printStackTrace();
 		}
 	}
+	*/
 }

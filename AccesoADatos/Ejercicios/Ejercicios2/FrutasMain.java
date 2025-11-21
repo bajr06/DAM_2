@@ -1,4 +1,4 @@
-package Ejercicio2;
+package Ejercicios2;
 
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
@@ -72,8 +72,11 @@ public class FrutasMain {
                 }
             }
 
+            scanner.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+    
     }
 }
