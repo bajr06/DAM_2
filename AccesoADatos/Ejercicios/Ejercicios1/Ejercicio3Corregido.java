@@ -19,7 +19,7 @@ public class Ejercicio3Corregido {
         // 2. Saber new File(ruta, nombreFichero);
         // 3. Comprobar antes de que crear que ruta es un directorio.
 
-        File directorio = new File(ruta);
+        File directorio = new File("AccesoADatos/Ejercicios1/" + ruta);
 
         if(directorio.exists() && directorio.isDirectory()) {
             File fichero = new File(ruta, nombreFichero);

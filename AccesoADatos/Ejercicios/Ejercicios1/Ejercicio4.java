@@ -7,7 +7,7 @@ public class Ejercicio4 {
 	static Scanner entrada = new Scanner(System.in);
 
 	public static void main(String [] args) {
-		File fichero = new File("Prueba");
+		File fichero = new File("AccesoADatos/Ejercicios1/Prueba4");
 
 		if(fichero.isDirectory()) {
 			File [] ficheros = fichero.listFiles();

@@ -1,9 +1,10 @@
 package JavaNIO;
 
-import java.nio.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.io.*;
 import java.util.*;
+import java.util.stream.Stream;
 
 public class Main {
 	public static void LeerFiles() {
@@ -42,7 +43,7 @@ public class Main {
 
 		try {
 			Files.copy(rutaOrigen, rutaDestino, StandardCopyOption.REPLACE_EXISTING);
-		} catch(IOExceptio ioe) {
+		} catch(IOException ioe) {
 			ioe.printStackTrace();
 		}
 	}
@@ -69,7 +70,7 @@ public class Main {
 		Path ruta = Path.of("primos.txt");
 
 		try {
-			Files.deleteIfExists(ruta)
+			Files.deleteIfExists(ruta);
 		} catch(IOException ioe) {
 			ioe.printStackTrace();
 		}

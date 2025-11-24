@@ -1,0 +1,15 @@
+<hibernate-configuration>
+	<session-factory>
+		<!---Datos de conexión  -->
+		<property name="hibernate.connection.url">jdbc_mysql//localhost:3306/hibernate_db</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">cfgs</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>	
+	
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="hibernate.hdm2dll.auto">update</property>
+		<property name="show_sql">true</property>
+
+		<mapping class="hibernate.Persona"/>
+	</session-factory>
+</hibernate-configuration>

@@ -1,4 +1,5 @@
-package Clase;
+// package Clase;
+package OutPutStream;
 
 import java.io.*;
 import java.util.*;
@@ -15,7 +16,7 @@ public class EjemploOutPutStream {
 			DataOutputStream dos = new DataOutputStream(new FileOutputStream(ficheroDatos));
 			dos.writeInt(1);
 			dos.writeDouble(1.2);
-			dos.Boolean(false);
+			dos.writeBoolean(false);
 			dos.writeUTF("Hola, ¿Como vas?");
 		} catch(IOException e) {
 			e.printStackTrace();
@@ -81,9 +82,9 @@ public class EjemploOutPutStream {
 	public static void main(String [] args) {
 		ArrayList <Persona> personas = new ArrayList<>();
 
-		persona.add(new Persona("Ana". 23));
-		persona.add(new Persona("Luis", 21));
-		persona.add(new persona("Mateo", 20));
+		personas.add(new Persona("Ana", 23));
+		personas.add(new Persona("Luis", 21));
+		personas.add(new Persona("Mateo", 20));
 
 		EscrituraPersonas(personas);
 		LecturaPersonas();

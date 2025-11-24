@@ -9,7 +9,7 @@ public class Persona implements Serializable { // Transformarlo en flujo de dato
 	public Persona(String nombre, int edad) {
 		super();
 		this.nombre = nombre;
-		this.edad = edad:
+		this.edad = edad;
 	}
 
 	public String getNombre() {

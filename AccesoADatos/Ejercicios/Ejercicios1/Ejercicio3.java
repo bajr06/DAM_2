@@ -2,7 +2,6 @@ package Ejercicios1;
 
 import java.util.Scanner;
 import java.io.*;
-import java.io.IOException;
 
 public class Ejercicio3 {
 	static Scanner entrada = new Scanner(System.in);
@@ -15,7 +14,7 @@ public class Ejercicio3 {
 		System.out.println("Ahora introduzca el nombre del fichero que quieres que cree:");
 		String nuevoFichero = entrada.nextLine();
 
-		File directorio = new File(nombreDirectorio);
+		File directorio = new File("AccesoADatos/Ejercicios1/" + nombreDirectorio);
 
 		if(directorio.exists()) {
 			File fichero = new File(nombreDirectorio + "/" + nuevoFichero);
