@@ -3,13 +3,13 @@ package Ejercicio1;
 import java.sql.*;
 import java.util.Scanner;
 
-public class main {
+public class Main {
 	static Scanner entrada = new Scanner(System.in);
 
-	public static void verJugadorPorLetra() {
+	public static void verJugadorPorLetra(Connection conexion) {
 		try {
 			String consulta = "select * from Jugadores where Nombre like ?";
-			PreparedStatement sentencia = conexion.preapreStatment(consulta);
+			PreparedStatement sentencia = conexion.prepareStatement(consulta);
 			String letra = entrada.nextLine();
 			letra += "%";
 			sentencia.setString(1, letra);
@@ -41,8 +41,8 @@ public class main {
 			Connection conexion = DriverManager.getConnection(url, usuario, contrasenya);
 			System.out.println("Se ha conectado a la Base de Datos");
 
-			verJugadorPorLetra();
-		} catch(SQLException sqle) {
+			verJugadorPorLetra(conexion);
+		} catch(ClassNotFoundException | SQLException sqle) {
 			sqle.printStackTrace();
 		}
 	}

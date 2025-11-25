@@ -1,4 +1,5 @@
-package LanzarProceso;
+package Temporal;
+// package LanzarProceso;
 
 public class LanzarCommando {
 	public static void main(String[] args) {

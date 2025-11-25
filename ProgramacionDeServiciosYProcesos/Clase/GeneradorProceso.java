@@ -13,7 +13,7 @@ public class GeneradorProceso {
 		ProcessBuilder pb = new ProcessBuilder(nombreArgumentos);
 
 		// comand ==> nombre del ejecutable
-		pb.comand(nombreEjecutable);
+		pb.command(nombreEjecutable);
 
 		// directory ==> ruta como objeto de la clase file.
 		pb.directory(directorio);

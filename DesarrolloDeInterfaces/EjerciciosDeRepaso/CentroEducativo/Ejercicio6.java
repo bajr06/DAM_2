@@ -29,7 +29,7 @@ public class Ejercicio6 {
 		System.out.println(al2.toString());
 	}
 
-	private static Alumno altaAlumno() {
+	/* private static Alumno altaAlumno() {
 		System.out.println("Introduzca los datos pedidos siguiendo el siguiente orden (dando enter cada vez que rellenes uno).");
 		System.out.println("DNI, Nombres, Apellidos, Fecha de Nacimiento, Sexo, Si es repetidor o no, y los módulos en los que está");
 
@@ -39,4 +39,5 @@ public class Ejercicio6 {
 		String f_nacimiento = entrada.nextLine();
 		String sexo
 	}
+	*/
 }

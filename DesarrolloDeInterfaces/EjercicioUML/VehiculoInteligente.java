@@ -1,5 +1,7 @@
 package EjercicioUML;
 
+import java.time.LocalDate;
+
 public class VehiculoInteligente {
 	int id;
 	String modelo;
@@ -20,17 +22,17 @@ public class VehiculoInteligente {
 	}
 
 
-	public getId() {
+	public int getId() {
 		return id;
 	}
-	public setId(int id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public getModelo() {
+	public String getModelo() {
 		return modelo;
 	}
-	public setModelo(String modelo) {
+	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
 

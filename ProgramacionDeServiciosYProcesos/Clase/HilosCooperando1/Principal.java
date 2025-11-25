@@ -9,15 +9,15 @@ public class Principal {
 		Contador contadoContador = new Contador();
 
 		for(int i = 0; i < NUM_HILOS; i++) {
-			Thread th = new Thread(new Hilo(i, CUENTA_TOTAL/NUM_HILOS, contadorCompartido));
+			Thread th = new Thread(new Hilo(i, CUENTA_TOTAL/NUM_HILOS, contadoContador));
 			th.start();
 			hilos[i] = th;
 		}
 
-		for(Thread h : hilo)  
+		for(Thread h : hilos)  
 			try {
 				h.join();
-			} cacth(IntterupedEception ie) {
+			} catch(InterruptedException ie) {
 				ie.printStackTrace();
 			}
 	}

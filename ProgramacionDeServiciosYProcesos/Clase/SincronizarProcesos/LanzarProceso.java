@@ -1,8 +1,8 @@
-package SincronizarProceso;
+package SincronizarProcesos;
 
 public class LanzarProceso {
-	public class void main(String [] args) {
-		GenerarProceso lanzador = new GeneradorProceso();
+	public static void main(String [] args) {
+		GeneradorProceso lanzador = new GeneradorProceso();
 		String ruta = "notepad.exe";
 
 		lanzador.ejecutarYDestruir(ruta);

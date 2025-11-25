@@ -1,5 +1,7 @@
 package HilosJoinSleep;
 
+import java.util.Random;
+
 public class Hilo implements Runnable {
 	private final String nombre;
 
@@ -21,7 +23,7 @@ public class Hilo implements Runnable {
 			System.out.printf("Hilo %s hace pausa %d milisegundos\n", this.nombre, pausa);
 			try {
 				Thread.sleep(pausa);
-			} catch(InterrupedException ie) {
+			} catch(InterruptedException ie) {
 				System.out.printf("Hilo %s interrupido\n", nombre);
 			}
 		}

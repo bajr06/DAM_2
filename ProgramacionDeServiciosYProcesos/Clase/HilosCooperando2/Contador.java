@@ -12,4 +12,10 @@ public class Contador implements Runnable {
 
 		return cuenta;
 	}
+
+	 @Override
+	 public void run() {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'run'");
+	 }
 }

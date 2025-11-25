@@ -1,17 +1,17 @@
-package HilosCooperando1:
+package HilosCooperando1;
 
 public class Hilo implements Runnable {
 	int numHilo, miParte, miCuenta = 0;
 	private final Contador cont;
 
-	Hilo(int numHilo, int miParte, Contador C) {
+	Hilo(int numHilo, int miParte, Contador c) {
 		this.numHilo = numHilo;
 		this.miParte = miParte;
 		this.cont = c;
 	}
 
 	public int getMiCuenta() {
-		return miCuenta:
+		return miCuenta;
 	}
 
 	@Override // Explicitamente: implementamos un método padre
@@ -21,6 +21,6 @@ public class Hilo implements Runnable {
 			miCuenta++;
 		}
 
-		System.out.printf("Hilo %d terminado, cuenta %d\n", numHilo, getCuenta());
+		System.out.printf("Hilo %d terminado, cuenta %d\n", numHilo, cont.getCuenta());
 	}
 }

@@ -1,12 +1,11 @@
 package SincronizarProcesos;
 
 import java.io.*;
-import java.util.*;
 
 public class GeneradorProceso {
-	public static void ejecutarYDestruir(String ruta) {
+	public void ejecutarYDestruir(String ruta) {
 		Process proceso = null;
-		ProcessBuilder pb = new ProcessBuilder(nombreArgumentos);
+		ProcessBuilder pb = new ProcessBuilder();
 
 		try {
 			proceso = pb.start();
@@ -18,13 +17,13 @@ public class GeneradorProceso {
 
 		try {
 			proceso.waitFor();
-		} catch(InterrupedException e) {
+		} catch(InterruptedException e) {
 			e.printStackTrace();
 		}
 
 		try {
 			System.out.println(proceso.exitValue());
-		} catch (IllegalThreadStatException e) {
+		} catch (IllegalThreadStateException e) {
 			System.out.print(e);
 		}
 

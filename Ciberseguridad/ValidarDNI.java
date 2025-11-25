@@ -1,4 +1,4 @@
-package Códigos_CRC;
+package Ciberseguridad;
 
 import java.util.Scanner;
 

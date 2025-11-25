@@ -1,12 +1,13 @@
-package Ejercicio4;
+package Ejercicio1;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Scanner;
 
-public class PracticaBBDD {
+public class Main2 {
 	public static void BuscarJugadoresPorPrimeraLetra(Connection conexion, Scanner entrada) {
 		String letra = "";
 		try {
@@ -108,7 +109,7 @@ public class PracticaBBDD {
 			BuscarJugadoresPorPrimeraLetra(conexion, entrada);
 			pesoMedio(conexion, entrada);
 			mostrarDatosEquipo(conexion, entrada);
-		} catch (SQLException sqle) {
+		} catch (ClassNotFoundException | SQLException sqle) {
 			sqle.printStackTrace();
 		}
 	}

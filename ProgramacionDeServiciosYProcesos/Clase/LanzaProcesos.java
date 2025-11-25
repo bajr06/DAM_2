@@ -1,6 +1,7 @@
+
 // package Ejercicios;
 
-public class LazaProcesos{
+public class LanzaProcesos{
 	public static void main(String [] args) {
 		String ruta = "C:/windows/system32";
 		String nombre = "notepad.exe";

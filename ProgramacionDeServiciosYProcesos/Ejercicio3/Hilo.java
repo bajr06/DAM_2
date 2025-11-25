@@ -21,7 +21,7 @@ public class Hilo implements Runnable {
 	public void run() {
 		for(int i = 0; i < habitantes; i++) {
 			this.votos.incrementa();
-			total;
+			total++;
 		}
 	}
 }

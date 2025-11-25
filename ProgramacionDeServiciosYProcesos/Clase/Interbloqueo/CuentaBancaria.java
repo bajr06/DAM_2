@@ -1,3 +1,5 @@
-package InterBloqueo;
+package Interbloqueo;
 
+public class CuentaBancaria {
 
+}

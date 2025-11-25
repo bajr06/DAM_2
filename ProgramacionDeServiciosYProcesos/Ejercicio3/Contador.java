@@ -12,4 +12,9 @@ public class Contador implements Runnable {
 
 		return votos;
 	}
+
+	@Override
+	public void run() {
+		throw new UnsupportedOperationException("Unimplemented method 'run'");
+	}
 }

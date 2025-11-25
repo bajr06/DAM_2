@@ -5,7 +5,7 @@ public class Principal {
 		String ruta = "ipconfig";
 		String [] parametros = {
 			"/all"
-		}
+		};
 		GeneradorProceso lanzador = new GeneradorProceso();
 		
 		lanzador.ejecutar(ruta, parametros); 

@@ -13,7 +13,7 @@ public class Principal {
 		try {
 			h1.join();
 			h2.join();
-		} catch(InterrupedException ie) {
+		} catch(InterruptedException ie) {
 			System.out.println("Se ha interrumpido");
 		}
 

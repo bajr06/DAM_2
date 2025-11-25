@@ -4,7 +4,7 @@ public class Contadores {
 	private long cont1 = 0;
 	private long cont2 = 0;
 	private final Object lock1 = new Object();
-	private final Object lock2 = new Objetc();
+	private final Object lock2 = new Object();
 
 
 	public void incrementar1() {

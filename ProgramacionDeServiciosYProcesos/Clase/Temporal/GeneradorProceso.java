@@ -1,19 +1,20 @@
-package LanzarProceso;
+package Temporal;
+// package LanzarProceso;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class GeneradorProceso {
-	public static void ejecutar(String ruta) {
-		List <String> nombreArgumentos = new ArrayList();
+	public void ejecutar(String ruta) {
+		List<String> nombreArgumentos = new ArrayList<>();
 
 		if (ruta == null || ruta.isEmpty()) {
 			System.out.println("Falta elnombre del comando");
 			System.exit(1);
 		}
 
-		File directorio = new File(ruta);
+		// File directorio = new File(ruta);
 		nombreArgumentos.add(ruta);// EXAMPLE OF A PROGRAM PATH
 		
 		ProcessBuilder pb = new ProcessBuilder(nombreArgumentos);
