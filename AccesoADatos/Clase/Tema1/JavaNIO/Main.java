@@ -54,6 +54,8 @@ public class Main {
 		try {
 			Stream<Path> flujo = Files.list(directorio);
 			flujo.forEach(archivo -> System.out.println(archivo.getFileName()));
+
+			flujo.close();
 		} catch(IOException ioe) {
 			ioe.printStackTrace();
 		}

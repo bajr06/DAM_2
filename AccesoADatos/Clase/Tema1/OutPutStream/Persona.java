@@ -27,4 +27,9 @@ public class Persona implements Serializable { // Transformarlo en flujo de dato
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + "]";
+	}
 }

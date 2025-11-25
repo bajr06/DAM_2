@@ -18,6 +18,8 @@ public class EjemploOutPutStream {
 			dos.writeDouble(1.2);
 			dos.writeBoolean(false);
 			dos.writeUTF("Hola, ¿Como vas?");
+
+			dos.close();
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
@@ -32,6 +34,8 @@ public class EjemploOutPutStream {
 			String frase = dis.readUTF();
 
 			System.out.println("Entero:" + entero + ", Decimal: " + numero + ", Booleano: " + booleano + ", Frase: " + frase);
+
+			dis.close();
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
@@ -62,7 +66,8 @@ public class EjemploOutPutStream {
 			}
 		}
 	}
-
+	
+	@SuppressWarnings("unchecked")
 	public static void LecturaPersonas() {
 		try {
 			ObjectInputStream ois = new ObjectInputStream(new FileInputStream("persona.dat"));
@@ -74,7 +79,8 @@ public class EjemploOutPutStream {
 				System.out.println(p);
 			}
 
-		} catch (IOException|ClassNotFoundException e) {
+			ois.close();
+		} catch (IOException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 	}
