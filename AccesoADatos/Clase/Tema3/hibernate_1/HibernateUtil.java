@@ -1,5 +1,5 @@
+package AccesoADatos.Tema3;
 // package hibernate;
-package Tema3;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
