@@ -1,6 +1,7 @@
 import java.io.*;
 
-public class GeneradorProceso {
+public class GeneradorComunicacionProceso {
+	@SuppressWarnings("deprecation")
 	public void ejecutar(String ruta) {
 		Runtime rt = Runtime.getRuntime(); // Lo mismo que el ProcessBuilder, pero este último tiene más opciones de utilidad.
 		Process proceso = null;
@@ -31,7 +32,6 @@ public class GeneradorProceso {
 	}
 
     public void ejecutar(String ruta, String nombre) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'ejecutar'");
     }
 }
