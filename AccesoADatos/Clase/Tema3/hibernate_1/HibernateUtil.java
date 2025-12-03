@@ -1,5 +1,4 @@
-package AccesoADatos.Tema3;
-// package hibernate;
+/* package hibernate_1;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -24,3 +23,4 @@ public class HibernateUtil {
 		getSessionFactory().close();
 	}
 }
+*/

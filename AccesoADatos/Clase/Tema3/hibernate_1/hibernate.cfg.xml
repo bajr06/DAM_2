@@ -1,4 +1,4 @@
-<hibernate-configuration>
+<!-- <hibernate-configuration>
 	<session-factory>
 		<!-- Datos de conexión  -->
 		<property name="hibernate.connection.url">jdbc:mysql//localhost:3306/hibernate_db</property>
@@ -16,3 +16,4 @@
 		<mapping class="hibernate.Persona"/>
 	</session-factory>
 </hibernate-configuration>
+-->

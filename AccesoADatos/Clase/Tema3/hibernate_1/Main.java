@@ -1,5 +1,5 @@
-package AccesoADatos.Clase.Tema3.hibernate_1;
-// package hibernate;
+/*
+package hibernate_1;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -53,3 +53,4 @@ public class Main {
 		HibernateUtil.shutdown();
 	}
 }
+*/

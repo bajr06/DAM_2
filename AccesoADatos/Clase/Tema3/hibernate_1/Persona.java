@@ -1,5 +1,4 @@
-// package hibernate;
-package Tema3;
+/* package hibernate_1;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -47,3 +46,4 @@ public class Persona {
 		return "Persona [id=" + id + ", nombre=" + nombre + ", edad=" + edad + "]";
 	}
 }
+*/
