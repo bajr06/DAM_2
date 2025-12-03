@@ -1,4 +1,4 @@
-package Ciberseguridad.Practica1;
+package Practica1;
 
 import java.io.IOException;
 import java.util.Random;

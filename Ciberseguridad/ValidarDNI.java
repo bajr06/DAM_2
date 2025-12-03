@@ -1,5 +1,3 @@
-package Ciberseguridad;
-
 import java.util.Scanner;
 
 public class ValidarDNI {
