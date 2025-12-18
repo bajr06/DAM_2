@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "AccesoADatos/Clase/Tema1",
+        "AccesoADatos/Clase/Tema2",
+        "AccesoADatos/Clase/Tema3",
+        "AccesoADatos/Ejercicios",
+        ""
+    ],
+    "java.project.referencedLibraries": []
+}

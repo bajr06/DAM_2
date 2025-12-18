@@ -1,5 +1,6 @@
-/* package hibernate_1;
+package Ejemplo_Hibernate_1;
 
+/*
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

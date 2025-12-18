@@ -1,4 +1,4 @@
-package AccesoADatos.EjerciciosTemporal;
+package EjerciciosTemporal;
 
 import java.io.*;
 
@@ -10,7 +10,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-public class Main {
+public class Principal {
 	public static void main(String [] args) {
 		try {
 			File ficheroXML = new File("frutas.xml");

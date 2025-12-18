@@ -1,4 +1,3 @@
-/*
 create database hibernate_db;
 use hibernate_db;
 
@@ -7,4 +6,3 @@ create table personas(
     nombre varchar(255) not null,
     edad int not null
 );
-*/

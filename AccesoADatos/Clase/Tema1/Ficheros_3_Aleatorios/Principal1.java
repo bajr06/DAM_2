@@ -1,4 +1,4 @@
-package AccesoFicherosBinarios;
+package Ficheros_3_Aleatorios;
 
 import java.io.*;
 
@@ -6,7 +6,7 @@ public class Principal1 {
 	public static void main(String [] args) {
 		try {
 			// Creamos el fichero
-			File fichero = new File("AccesoADatos/Clase/Tema1/AccesoFicherosBinarios/datos1.dat");
+			File fichero = new File("AccesoADatos/Clase/Tema1/Ficheros_3_Aleatorios/datos1.dat");
 			fichero.createNewFile();
 
 			// El segundo parámetro indicamos si r - lectura, w - escritura o rw - lectura y escritura

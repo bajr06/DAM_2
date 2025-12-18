@@ -1,12 +1,11 @@
-// package Clase;
-package OutPutStream;
+package Ficheros_2_Binarios;
 
 import java.io.*;
 import java.util.*;
 
 public class EjemploOutPutStream {
 	public static void EscrituraDatos() {
-		File ficheroDatos = new File("datos.bin");
+		File ficheroDatos = new File("AccesoADatos/Clase/Tema1/Ficheros_2_Binarios/datos1.bin");
 
 		try {
 			if(!ficheroDatos.exists()) {
@@ -14,10 +13,10 @@ public class EjemploOutPutStream {
 			}
 
 			DataOutputStream dos = new DataOutputStream(new FileOutputStream(ficheroDatos));
-			dos.writeInt(1);
+			dos.writeInt(2);
 			dos.writeDouble(1.2);
 			dos.writeBoolean(false);
-			dos.writeUTF("Hola, ¿Como vas?");
+			dos.writeUTF("Hola, ¿Cómo vas?");
 
 			dos.close();
 		} catch(IOException e) {
@@ -27,7 +26,7 @@ public class EjemploOutPutStream {
 
 	public static void LecturaDatos() {
 		try {
-			DataInputStream dis = new DataInputStream(new FileInputStream("datos.bin"));
+			DataInputStream dis = new DataInputStream(new FileInputStream("AccesoADatos/Clase/Tema1/Ficheros_2_Binarios/datos1.bin"));
 			int entero = dis.readInt();
 			double numero = dis.readDouble();
 			boolean booleano = dis.readBoolean();
@@ -42,7 +41,7 @@ public class EjemploOutPutStream {
 	}
 
 	public static void EscrituraPersonas(ArrayList <Persona> personas) {
-		String fichero = "persona.dat";
+		String fichero = "AccesoADatos/Clase/Tema1/Ficheros_2_Binarios/persona2.dat";
 		File ficheroEscritura = new File(fichero);
 
 		if(!ficheroEscritura.exists()) {
@@ -59,22 +58,24 @@ public class EjemploOutPutStream {
 				// El tipo de dato que tiene que transformar es un objeto en byte.
 				ObjectOutputStream oos = new ObjectOutputStream(fos);
 
+				// Escribe el array entero de personas
 				oos.writeObject(personas);
+				
 				oos.close();
 			} catch(IOException e) {
-				System.out.println("El fichero es directorio y no se puede escribir");
+				System.err.println("El fichero es directorio y no se puede escribir");
 			}
 		}
 	}
 	
+	
 	@SuppressWarnings("unchecked")
 	public static void LecturaPersonas() {
 		try {
-			ObjectInputStream ois = new ObjectInputStream(new FileInputStream("persona.dat"));
+			ObjectInputStream ois = new ObjectInputStream(new FileInputStream("AccesoADatos/Clase/Tema1/Ficheros_2_Binarios/persona2.dat"));
 			ArrayList<Persona> personas = (ArrayList<Persona>) ois.readObject();
 
 			System.out.println("Las personas almacenadas en el fichero son:");
-
 			for(Persona p: personas) {
 				System.out.println(p);
 			}
@@ -92,10 +93,10 @@ public class EjemploOutPutStream {
 		personas.add(new Persona("Luis", 21));
 		personas.add(new Persona("Mateo", 20));
 
-		EscrituraPersonas(personas);
-		LecturaPersonas();
-
 		EscrituraDatos();
 		LecturaDatos();
+
+		EscrituraPersonas(personas);
+		LecturaPersonas();
 	}
 }

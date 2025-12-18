@@ -1,4 +1,4 @@
-package OutPutStream;
+package Ficheros_2_Binarios;
 
 import java.io.*;
 

@@ -1,12 +1,12 @@
-/*
-package hibernate_1;
+package Ejemplo_Hibernate_1;
 
+/*
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-public class Main {
+public class Ejemplo_Main {
 	public static void insertarDatos(Session session, Transaction transaction) {
-		Persona persona = new Persona("Beatriz", 21);
+		Ejemplo_Persona persona = new Ejemplo_Persona("Beatriz", 21);
 		session.save(persona);
 		transaction.commit();
 	}
