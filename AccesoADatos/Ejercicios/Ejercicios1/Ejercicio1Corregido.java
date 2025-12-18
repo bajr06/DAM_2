@@ -8,10 +8,11 @@ public class Ejercicio1Corregido {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
+		// Introducción de ruta que vamos a comprobar.
 		System.out.println("Introduzca el directorio del que quieras imprimir los elementos:");
-		String ruta = sc.nextLine(); // Introducción de ruta que vamos a comprobar.
-		
+		String ruta = sc.nextLine();
 		File directorio = new File("AccesoADatos/Ejercicios1/" + ruta);
+		
 		// Comprobar si la ruta es un directorio.
 		if(directorio.exists() && directorio.isDirectory()) {
 			String [] lista = directorio.list();

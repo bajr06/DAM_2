@@ -1,4 +1,4 @@
-package EjerciciosTemporal;
+package Ejercicios3;
 
 import java.io.*;
 
@@ -10,10 +10,10 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-public class Principal {
+public class Principal2 {
 	public static void main(String [] args) {
 		try {
-			File ficheroXML = new File("frutas.xml");
+			File ficheroXML = new File("AccesoADatos/Ejercicios/Ejercicios2/frutas.xml");
 
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			DocumentBuilder docB = dbf.newDocumentBuilder();

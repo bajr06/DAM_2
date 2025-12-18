@@ -1,5 +1,4 @@
 package Ejercicios1;
-// package Ejercicios1;
 
 import java.util.*;
 import java.io.*;

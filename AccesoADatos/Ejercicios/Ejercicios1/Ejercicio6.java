@@ -10,7 +10,7 @@ public class Ejercicio6 {
 		System.out.println("Buenas noches, escriba el nombre del fichero a buscar:");
 		String nombreFichero = entrada.nextLine();
 		
-		File fichero = new File(nombreFichero);
+		File fichero = new File("AccesoADatos/Ejercicios/Ejercicios1/" + nombreFichero);
 		
 		if(fichero.exists()) {
 			System.out.println("Ya existe. La dirección del fichero es: " + fichero.getAbsolutePath());

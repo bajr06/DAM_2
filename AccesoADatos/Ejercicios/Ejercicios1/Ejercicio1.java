@@ -11,7 +11,7 @@ public class Ejercicio1 {
 		System.out.println("Introduzca el nombre del directorio al que le quieres ver que ficheros tiene: ");
 		
 		String directorio = entrada.nextLine();
-		File fichero = new File("AccesoADatos/Ejercicios1/" + directorio);
+		File fichero = new File(directorio);
 		
 		if(fichero.exists() && fichero.isDirectory()) {
 			File [] ficheros = fichero.listFiles();

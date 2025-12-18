@@ -10,7 +10,7 @@ public class Ejercicio5 {
 		System.out.println("Introduzca el nombre del fichero");
 		String nombreFichero = entrada.nextLine();
 
-		File fichero = new File(nombreFichero);
+		File fichero = new File("AccesoADatos/Ejercicios/Ejercicios1/" + nombreFichero);
 
 		boolean respuestaPermisos = comprobarPermisos(fichero);
 
@@ -21,7 +21,7 @@ public class Ejercicio5 {
 
 	private static boolean comprobarPermisos(File fichero) {
 		if(fichero.exists()) {
-		       	char lectura = permisoLectura(fichero);
+			char lectura = permisoLectura(fichero);
 			char escritura = permisoEscritura(fichero);
 			char ejecucion = permisoEjecucion(fichero);
 			String permisos = lectura + "" + escritura + "" + ejecucion;

@@ -1,14 +1,14 @@
-package Ejercicios2;
+package Ejercicios3;
 
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
 import java.io.*;
 import java.util.*;
 
-public class FrutasMain {
+public class Principal1 {
 	public static void main(String[] args) {
 		try {
-			File archivo = new File("frutas.txt");
+			File archivo = new File("AccesoADatos/Ejercicios/Ejercicios2/frutas.xml");
 			DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 			Document doc = builder.parse(archivo);
 			

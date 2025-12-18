@@ -1,4 +1,4 @@
-package Ejercicios2;
+package Ejercicios3;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ public class Fruta {
 	ArrayList<String> nutrientes;
 
 
-	public Fruta(String nombre, String tipo, String color, String origen, double precio, String temporada, ArrayList<String> nutrientes) {
+	public Fruta(String nombre, String tipo, String color, String origen, double precio, String temporada) {
 		super();
 		this.nombre = nombre;
 		this.tipo = tipo;
@@ -20,7 +20,7 @@ public class Fruta {
 		this.origen = origen;
 		this.precio = precio;
 		this.temporada = temporada;
-		this.nutrientes = nutrientes;
+		this.nutrientes = null;
 	}
 
 
@@ -89,6 +89,6 @@ public class Fruta {
 
 	@Override
 	public String toString() {
-		return "Fruta [Nombre = " + nombre + ", Tipo = " + tipo + ", Color = " + color + ", Origen = " + origen + ", Precio = " + precio + ", Temporada = " + temporada + ", Nutrientes = " + nutrientes + "]";
+		return "Fruta [Nombre = " + nombre + ", Tipo = " + tipo + ", Color = " + color + ", Origen = " + origen + ", Precio = " + precio + ", Temporada = " + temporada + "]";
 	}
 }

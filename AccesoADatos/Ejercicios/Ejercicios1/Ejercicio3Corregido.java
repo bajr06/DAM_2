@@ -34,7 +34,7 @@ public class Ejercicio3Corregido {
                     System.out.println("Fichero existe.");
                 }
             } catch(IOException ioe) {
-                ioe.printStackTrace();
+                ioe.getMessage();
             }
         } else {
             System.out.println("La ruta introducida no es un directorio.");
