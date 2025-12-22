@@ -9,5 +9,11 @@
         "Ciberseguridad/Practicas",
         ""
     ],
-    "java.project.referencedLibraries": [],
+    
+    "java.project.referencedLibraries": [
+        ".librerias/jsoup-1.21.2-javadoc.jar",
+        ".librerias/jsoup-1.21.2-sources.jar",
+        ".librerias/jsoup-1.21.2.jar",
+        ".librerias/mysql-connector-j-9.5.0.jar"
+    ],
 }
