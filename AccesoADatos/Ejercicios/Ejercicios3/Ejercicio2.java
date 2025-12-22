@@ -41,7 +41,7 @@ public class Ejercicio2 {
 	}
 
 	public static void main(String[] args) {
-		File fichero = new File("AccesoADatos/Ejercicios/Ejercicios3/productos1.dat");
+		File fichero = new File("AccesoADatos/Ejercicios/Ejercicios3/Productos1.dat");
 
 		try {
 			if(!fichero.exists()) {
@@ -51,17 +51,80 @@ public class Ejercicio2 {
 			ioe.printStackTrace();
 		}
 
-		System.out.println("Seleccione la opción que quieres realizar: ");
-		int opcion = menu();
-
 		try {
 			RandomAccessFile raf = new RandomAccessFile(fichero, "rw");
 
-			switch(opcion) {
-				/*
-				case 1: Tengo que terminar esto.
-				*/
-			}
+			System.out.println("Seleccione la opción que quieres realizar: ");
+			int opcion = menu();
+
+			do {
+				switch(opcion) {
+					case 1:
+						raf.writeInt(pedirId());
+						raf.writeInt(pedirStock());
+						raf.writeDouble(pedirPrecio());
+						break;
+					case 2:
+						raf.seek(0);
+
+						while(raf.getFilePointer() < raf.length()) {
+							System.out.println("ID: " + raf.readInt());
+							System.out.println("Stock: " + raf.readInt());
+							System.out.println("Precio " + raf.readDouble());
+						}
+
+						break;
+					case 3:
+						int busqueda = pedirId();
+						raf.seek(0);
+
+						while (raf.getFilePointer() < raf.length()) {
+							if(raf.readInt() == busqueda) {
+								raf.seek(raf.getFilePointer() - 4);
+
+								System.out.println("ID: " + raf.readInt());
+								System.out.println("Stock: " + raf.readInt());
+								System.out.println("Precio " + raf.readDouble());
+							}
+						}
+
+						break;
+					case 4:
+						int borrado = pedirId();
+						raf.seek(0);
+
+						while (raf.getFilePointer() < raf.length()) {
+							if(raf.readInt() == borrado) {
+								raf.seek(raf.getFilePointer() - 4);
+
+								raf.writeInt(0);
+								raf.writeInt(0);
+								raf.writeDouble(0);
+							}
+						}
+
+						break;
+					case 5:
+						int cambio = pedirId();
+						raf.seek(0);
+
+						while (raf.getFilePointer() < raf.length()) {
+							if(raf.readInt() == cambio) {
+								raf.writeInt(pedirStock());
+								raf.writeDouble(pedirPrecio());
+							}
+						}
+						break;
+					default:
+						IO.println("Hay 2 opciones... O has salido, o has escogido una opción errónea");
+						break;
+				}
+
+				System.out.println("Seleccione la opción que quieres realizar: ");
+				opcion = menu();
+			} while(opcion != 6);
+
+			IO.println("Pues si, has salido. ¡Hasta la próxima!");
 
 			raf.close();
 		} catch(IOException ioe) {

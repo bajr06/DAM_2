@@ -29,7 +29,7 @@ public class Ejercicio1Semicorregido {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
-		File fichero = new File("AccesoADatos/Ejercicios/Ejercicios3/Fibonacci2");
+		File fichero = new File("AccesoADatos/Ejercicios/Ejercicios3/Fibonacci2.dat");
 
 		try {
 			RandomAccessFile escritor = new RandomAccessFile(fichero, "rw");

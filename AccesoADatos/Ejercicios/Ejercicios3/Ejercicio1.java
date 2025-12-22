@@ -15,7 +15,7 @@ public class Ejercicio1 {
 		return cantidadNumeros;
 	}
 
-	private static void Fibonacci(RandomAccessFile raf, int cantidad) {
+	private static void fibonacci(RandomAccessFile raf, int cantidad) {
 		try {
 			raf.writeInt(0);
 			raf.writeInt(1);
@@ -62,7 +62,7 @@ public class Ejercicio1 {
 		try {
 			RandomAccessFile raf = new RandomAccessFile(fichero, "rw");
 
-			Fibonacci(raf, cantidad);
+			fibonacci(raf, cantidad);
 
 			raf.seek(0);
 			System.out.println("Fichero actualizado como Dios manda");
