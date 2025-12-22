@@ -4,6 +4,9 @@
         "AccesoADatos/Clase/Tema2",
         "AccesoADatos/Clase/Tema3",
         "AccesoADatos/Ejercicios",
+        "AccesoADatos/Practicas/PracticaTema1",
+        "AccesoADatos/Practicas/PracticaTema2",
+        ""
     ],
     "java.project.referencedLibraries": [],
 }

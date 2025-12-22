@@ -1,0 +1,8 @@
+🧾 TICKET DE VENTA
+Fecha: 2025-11-12 19:26:43
+Vendedor: Teresa
+Planta: Código 20
+Cantidad: 10
+Precio unitario: 400,61€
+Total: 4006,10€
+------------------------------

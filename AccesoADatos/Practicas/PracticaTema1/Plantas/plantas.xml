@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plantas>
+    <planta>
+        <codigo>1</codigo>
+        <nombre>Cactus</nombre>
+        <foto>cactus.jpg</foto>
+        <descripcion>Planta suculenta del desierto.</descripcion>
+    </planta>
+    <planta>
+        <codigo>2</codigo>
+        <nombre>Geranio</nombre>
+        <foto>geranio.jpg</foto>
+        <descripcion>Flor común de jardín con colores vivos.</descripcion>
+    </planta>
+    <planta>
+        <codigo>3</codigo>
+        <nombre>Helecho</nombre>
+        <foto>helecho.jpg</foto>
+        <descripcion>Planta de sombra con hojas verdes largas.</descripcion>
+    </planta>
+    <planta>
+        <codigo>4</codigo>
+        <nombre>Rosa</nombre>
+        <foto>rosa.jpg</foto>
+        <descripcion>Flor ornamental con espinas.</descripcion>
+    </planta>
+    <planta>
+        <codigo>5</codigo>
+        <nombre>Lavanda</nombre>
+        <foto>lavanda.jpg</foto>
+        <descripcion>Planta aromática de color violeta.</descripcion>
+    </planta>
+    <planta>
+        <codigo>6</codigo>
+        <nombre>Aloe Vera</nombre>
+        <foto>aloe_vera.jpg</foto>
+        <descripcion>Planta medicinal con hojas carnosas.</descripcion>
+    </planta>
+    <planta>
+        <codigo>7</codigo>
+        <nombre>Menta</nombre>
+        <foto>menta.jpg</foto>
+        <descripcion>Planta aromática usada en infusiones.</descripcion>
+    </planta>
+    <planta>
+        <codigo>8</codigo>
+        <nombre>Bambú</nombre>
+        <foto>bambu.jpg</foto>
+        <descripcion>Planta de tallo alto y hueco, de rápido crecimiento.</descripcion>
+    </planta>
+    <planta>
+        <codigo>9</codigo>
+        <nombre>Orquídea</nombre>
+        <foto>orquidea.jpg</foto>
+        <descripcion>Flor exótica de gran valor ornamental.</descripcion>
+    </planta>
+    <planta>
+        <codigo>10</codigo>
+        <nombre>Hortensia</nombre>
+        <foto>hortensia.jpg</foto>
+        <descripcion>Planta de flores grandes y coloridas.</descripcion>
+    </planta>
+    <planta>
+        <codigo>11</codigo>
+        <nombre>Palmera</nombre>
+        <foto>palmera.jpg</foto>
+        <descripcion>Árbol tropical con hojas largas en forma de abanico.</descripcion>
+    </planta>
+    <planta>
+        <codigo>12</codigo>
+        <nombre>Clavel</nombre>
+        <foto>clavel.jpg</foto>
+        <descripcion>Flor de colores vivos y aroma agradable.</descripcion>
+    </planta>
+    <planta>
+        <codigo>13</codigo>
+        <nombre>Jacinto</nombre>
+        <foto>jacinto.jpg</foto>
+        <descripcion>Planta bulbosa de flores perfumadas.</descripcion>
+    </planta>
+    <planta>
+        <codigo>14</codigo>
+        <nombre>Petunia</nombre>
+        <foto>petunia.jpg</foto>
+        <descripcion>Flor de jardín muy colorida.</descripcion>
+    </planta>
+    <planta>
+        <codigo>15</codigo>
+        <nombre>Begonia</nombre>
+        <foto>begonia.jpg</foto>
+        <descripcion>Planta ornamental con hojas decorativas.</descripcion>
+    </planta>
+    <planta>
+        <codigo>16</codigo>
+        <nombre>Poto</nombre>
+        <foto>poto.jpg</foto>
+        <descripcion>Planta colgante de interior muy resistente.</descripcion>
+    </planta>
+    <planta>
+        <codigo>17</codigo>
+        <nombre>Crisantemo</nombre>
+        <foto>crisantemo.jpg</foto>
+        <descripcion>Flor típica de otoño en muchos colores.</descripcion>
+    </planta>
+    <planta>
+        <codigo>18</codigo>
+        <nombre>Romero</nombre>
+        <foto>romero.jpg</foto>
+        <descripcion>Planta aromática usada en la cocina mediterránea.</descripcion>
+    </planta>
+    <planta>
+        <codigo>19</codigo>
+        <nombre>Ficus</nombre>
+        <foto>ficus.jpg</foto>
+        <descripcion>Árbol o arbusto de interior muy popular.</descripcion>
+    </planta>
+    <planta>
+        <codigo>20</codigo>
+        <nombre>Jazmín</nombre>
+        <foto>jazmin.jpg</foto>
+        <descripcion>Planta trepadora de flores fragantes.</descripcion>
+    </planta>
+</plantas>
