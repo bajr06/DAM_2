@@ -1,4 +1,4 @@
-package Ejercicio1;
+package Ejercicios7;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class Main2 {
+public class Ejercicios1 {
 	public static void BuscarJugadoresPorPrimeraLetra(Connection conexion, Scanner entrada) {
 		String letra = "";
 		try {

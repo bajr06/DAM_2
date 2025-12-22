@@ -1,4 +1,4 @@
-package Ejercicios3;
+package Ejercicios4;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,6 +8,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import Ejercicios3.Persona;
 
 public class Ejercicio3 {
 	static Scanner entrada = new Scanner(System.in);

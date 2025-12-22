@@ -1,9 +1,9 @@
-package Ejercicio1;
+package Ejercicios6;
 
 import java.sql.*;
 import java.util.Scanner;
 
-public class Main {
+public class Ejercicio1 {
 	static Scanner entrada = new Scanner(System.in);
 
 	public static void verJugadorPorLetra(Connection conexion) {
