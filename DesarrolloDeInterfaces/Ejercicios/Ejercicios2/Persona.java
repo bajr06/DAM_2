@@ -1,5 +1,4 @@
-// package Ejercicio_Repaso_2;
-
+package Ejercicios2;
 public class Persona {
 	String dni;
 	String nombre;

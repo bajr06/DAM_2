@@ -1,4 +1,4 @@
-// package Ejercicio_Repaso_2;
+package Ejercicios2;
 
 public class Modulo {
 	String nombre;

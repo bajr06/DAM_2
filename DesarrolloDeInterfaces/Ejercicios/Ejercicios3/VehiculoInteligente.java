@@ -1,4 +1,4 @@
-package EjercicioUML;
+package Ejercicios3;
 
 import java.time.LocalDate;
 

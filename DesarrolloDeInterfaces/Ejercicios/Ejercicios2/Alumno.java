@@ -1,4 +1,4 @@
-// package Ejercicio_Repaso_2;
+package Ejercicios2;
 
 import java.util.Arrays;
 
