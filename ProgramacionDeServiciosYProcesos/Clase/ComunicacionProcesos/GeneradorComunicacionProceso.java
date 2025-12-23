@@ -1,3 +1,5 @@
+package ComunicacionProcesos;
+
 import java.io.*;
 
 public class GeneradorComunicacionProceso {

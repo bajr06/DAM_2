@@ -1,4 +1,4 @@
-// package LanzarProceso;
+package Ejercicio1;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -53,7 +53,6 @@ public class GeneradorProceso {
 	}
 
     public void ejecutar(String ruta, String nombre) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'ejecutar'");
     }
 }
