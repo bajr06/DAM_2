@@ -1,4 +1,4 @@
-package Ejercicios2;
+package Ejercicios2.CentroEducativo;
 
 public class Modulo {
 	String nombre;

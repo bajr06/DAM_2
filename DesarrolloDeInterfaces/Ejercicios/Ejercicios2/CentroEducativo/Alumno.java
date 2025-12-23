@@ -1,4 +1,4 @@
-package Ejercicios2;
+package Ejercicios2.CentroEducativo;
 
 import java.util.Arrays;
 

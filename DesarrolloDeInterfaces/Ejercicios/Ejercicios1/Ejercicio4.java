@@ -11,7 +11,6 @@ public class Ejercicio4 {
 		System.out.println("Introduzca la cantidad de columnas:");
 		int columnas = entrada.nextInt();
 		
-		
 		System.out.println("Introduzca la cantidad de filas:");
 		int filas = entrada.nextInt();
 		
