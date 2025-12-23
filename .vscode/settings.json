@@ -1,13 +1,16 @@
 {
     "java.project.sourcePaths": [
-        "AccesoADatos/Clase/Tema1",
-        "AccesoADatos/Clase/Tema2",
-        "AccesoADatos/Clase/Tema3",
+        "AccesoADatos/Clase/AAD_Tema_1",
+        "AccesoADatos/Clase/AAD_Tema_2",
+        "AccesoADatos/Clase/AAD_Tema_3",
         "AccesoADatos/Ejercicios",
         "AccesoADatos/Practicas/PracticaTema1",
         "AccesoADatos/Practicas/PracticaTema2",
+
         "Ciberseguridad/Practicas",
+
         "DesarrolloDeInterfaces/Ejercicios",
+        
         "ProgramacionDeServiciosYProcesos/Clase",
         "ProgramacionDeServiciosYProcesos/Ejercicios"
     ],

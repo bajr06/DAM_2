@@ -41,14 +41,20 @@ public class Ejemplo_Main {
 		transaction.commit();
 	}
 
+	public static void consultaHQL(int edad, Session session, Transaction transaction) {
+		String consultaHQL = "from personas p where p.edad >: edad";
+
+		// Query<Persona> consulta = session.createQuery(consultaHQL, Persona.class);
+	}
+
 
 	public static void main(String[] args) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction transaction = session.beginTransaction();
 		
-		lecturaDatos(1, session, transaction);
-
-		transaction.commit();
+		//lecturaDatos(1, session, transaction);
+		modificacion(session, transaction, 1);
+		
 		session.close();
 		HibernateUtil.shutdown();
 	}

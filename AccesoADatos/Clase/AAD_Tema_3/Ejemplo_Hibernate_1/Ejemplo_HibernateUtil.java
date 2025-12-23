@@ -9,6 +9,7 @@ public class HibernateUtil {
 	
 	public static SessionFactory buildSessionFactory() {
 		try {
+			// Cargar todos los datos que hemos puesto en hibernate.cfg
 			return new Configuration().configure().buildSessionFactory();
 		} catch(Throwable t) {
 			System.err.println("Error: " + t);

@@ -12,11 +12,16 @@ import jakarta.persistence.Table;
 public class Persona {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	private String nombre;
 	private int edad;
 	
+	public Persona() {
+		super();
+	}
+
 	public Persona(String nombre, int edad) {
+		super();
 		this.nombre = nombre;
 		this.edad = edad;
 	}
@@ -44,7 +49,7 @@ public class Persona {
 
 	@Override
 	public String toString() {
-		return "Persona [id=" + id + ", nombre=" + nombre + ", edad=" + edad + "]";
+		return "Persona [Identificador = " + id + ", Nombre = " + nombre + ", Edad = " + edad + "]";
 	}
 }
 */
