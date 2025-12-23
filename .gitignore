@@ -14,3 +14,7 @@
 *.docx
 *.zip
 *.vmk
+
+# Carpetas
+AccesoADatos/Ejercicios/Ejercicios8/bin
+AccesoADatos/Ejercicios/Ejercicios8/obj
