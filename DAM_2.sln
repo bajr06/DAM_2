@@ -6,7 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccesoADatos", "AccesoADato
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicios", "Ejercicios", "{F3F078A0-86EF-1726-2255-ADB59C56C46B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicios8", "AccesoADatos\Ejercicios\Ejercicios8\Ejercicios8.csproj", "{B6D8C038-048A-C675-ABF4-C418756C82E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAD_Ejercicios_8", "AccesoADatos\Ejercicios\AAD_Ejercicios_8\AAD_Ejercicios_8.csproj", "{B6D8C038-048A-C675-ABF4-C418756C82E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
