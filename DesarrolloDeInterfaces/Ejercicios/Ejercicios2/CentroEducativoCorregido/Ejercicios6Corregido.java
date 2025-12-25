@@ -6,5 +6,5 @@ public class Ejercicios6Corregido {
 	Profesor profe2 = new Profesor("5934122B", "Jose L.", "Álvarez", 1000.0, 0, true);
 
 	// Creado personal de Admin.
-	// TODO Terminar de hacer esto.
+	
 }
