@@ -2,9 +2,6 @@ package Ventana_1_Creacion;
 
 import java.awt.Color;
 import java.awt.EventQueue;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -12,7 +9,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JTextField;
 
-public class Ventana {
+public class Ventana1 {
 	private JFrame frame;
 	private JTextField textField;
 	private JLabel lblNewLabel;
@@ -24,7 +21,7 @@ public class Ventana {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Ventana window = new Ventana();
+					Ventana1 window = new Ventana1();
 					window.frame.setVisible(true);
 				} catch(Exception e) {
 					e.printStackTrace();
@@ -33,7 +30,7 @@ public class Ventana {
 		});
 	}
 
-	public Ventana() {
+	public Ventana1() {
 		initialize();
 	}
 
@@ -56,10 +53,6 @@ public class Ventana {
 
 		btnNewButton = new JButton("Aceptar");
 		btnNewButton.setToolTipText("Sans");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
 		btnNewButton.setBounds(354, 256, 89, 23);
 		frame.getContentPane().add(btnNewButton);
 

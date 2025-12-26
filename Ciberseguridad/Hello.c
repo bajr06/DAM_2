@@ -9,7 +9,7 @@ typedef struct {
 } Persona;
 
 int main (void) {
-    Persona * personas = (Persona *) malloc(20 * sizeof(Persona));
+    Persona * personas = (Persona *) malloc(20 * sizeof(Persona)); // TODO Falta completar esto
 
     printf("Hello World\n");
 
