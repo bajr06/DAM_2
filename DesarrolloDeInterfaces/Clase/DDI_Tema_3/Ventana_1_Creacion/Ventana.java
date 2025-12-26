@@ -1,0 +1,74 @@
+package Ventana_1_Creacion;
+
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JRadioButtonMenuItem;
+import javax.swing.JTextField;
+
+public class Ventana {
+	private JFrame frame;
+	private JTextField textField;
+	private JLabel lblNewLabel;
+	private JButton btnNewButton;
+	private JRadioButtonMenuItem rbdtnmntmNewRadioItem;
+	private JPasswordField passwordField;
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Ventana window = new Ventana();
+					window.frame.setVisible(true);
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	public Ventana() {
+		initialize();
+	}
+
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setBackground(new Color(255, 128, 0));
+		frame.setBounds(100, 100, 480, 340);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+
+		textField = new JTextField();
+		textField.setEnabled(false);
+		textField.setBounds(99, 28, 86, 20);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+
+		lblNewLabel = new JLabel("Nombre");
+		lblNewLabel.setBounds(34, 23, 65, 31);
+		frame.getContentPane().add(lblNewLabel);
+
+		btnNewButton = new JButton("Aceptar");
+		btnNewButton.setToolTipText("Sans");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton.setBounds(354, 256, 89, 23);
+		frame.getContentPane().add(btnNewButton);
+
+		rbdtnmntmNewRadioItem = new JRadioButtonMenuItem("New Radio Item");
+		rbdtnmntmNewRadioItem.setBounds(212, 253, 133, 26);
+		frame.getContentPane().add(rbdtnmntmNewRadioItem);
+
+		passwordField = new JPasswordField();
+		passwordField.setBounds(241, 130, 31, 20);
+		frame.getContentPane().add(passwordField);
+	}
+}
