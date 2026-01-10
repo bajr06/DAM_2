@@ -5,7 +5,7 @@ import java.util.*;
 
 public class EjemploOutPutStream {
 	public static void EscrituraDatos() {
-		File ficheroDatos = new File("AccesoADatos/Clase/Tema1/Ficheros_2_Binarios/datos1.bin");
+		File ficheroDatos = new File("AccesoADatos/Clase/AAD_Tema_1/Ficheros_2_Binarios/datos1.bin");
 
 		try {
 			if(!ficheroDatos.exists()) {
@@ -26,7 +26,7 @@ public class EjemploOutPutStream {
 
 	public static void LecturaDatos() {
 		try {
-			DataInputStream dis = new DataInputStream(new FileInputStream("AccesoADatos/Clase/Tema1/Ficheros_2_Binarios/datos1.bin"));
+			DataInputStream dis = new DataInputStream(new FileInputStream("AccesoADatos/Clase/AAD_Tema_1/Ficheros_2_Binarios/datos1.bin"));
 			int entero = dis.readInt();
 			double numero = dis.readDouble();
 			boolean booleano = dis.readBoolean();
@@ -41,7 +41,7 @@ public class EjemploOutPutStream {
 	}
 
 	public static void EscrituraPersonas(ArrayList <Persona> personas) {
-		String fichero = "AccesoADatos/Clase/Tema1/Ficheros_2_Binarios/persona2.dat";
+		String fichero = "AccesoADatos/Clase/AAD_Tema_1/Ficheros_2_Binarios/persona2.dat";
 		File ficheroEscritura = new File(fichero);
 
 		if(!ficheroEscritura.exists()) {
@@ -72,7 +72,7 @@ public class EjemploOutPutStream {
 	@SuppressWarnings("unchecked")
 	public static void LecturaPersonas() {
 		try {
-			ObjectInputStream ois = new ObjectInputStream(new FileInputStream("AccesoADatos/Clase/Tema1/Ficheros_2_Binarios/persona2.dat"));
+			ObjectInputStream ois = new ObjectInputStream(new FileInputStream("AccesoADatos/Clase/AAD_Tema_1/Ficheros_2_Binarios/persona2.dat"));
 			ArrayList<Persona> personas = (ArrayList<Persona>) ois.readObject();
 
 			System.out.println("Las personas almacenadas en el fichero son:");
