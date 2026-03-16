@@ -29,3 +29,5 @@ CREATE TABLE Hotel (
 	nombre_hotel VARCHAR(20),
 	estrellas CHECK (Edad >= 1 AND Edad <= 5),
 );
+
+-- TODO: Falta revisar el campos y tablas intermidias que sean necesarias
