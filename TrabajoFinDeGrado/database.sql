@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS Habitacion;
 DROP TABLE IF EXISTS Recepcionista;
-DROP TABLE IF EXISTS Usuario;
+DROP TABLE IF EXISTS Huesped;
 DROP TABLE IF EXISTS Hotel;
 
 CREATE TABLE Habitacion (
@@ -17,17 +17,17 @@ CREATE TABLE Recepcionista (
 	nivel_recepcionista ENUM('AUXILIAR', 'SUPERVISOR', 'JEFE') NOT NULL,
 );
 
-CREATE TABLE Usuario (
-	id_usuario INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-	nombres_usuario VARCHAR(20) NOT NULL,
-	apellidos_usuario VARCHAR(50) NOT NULL,
-	categoria_usuario ENUM('WHITE', 'SILVER', 'GOD', 'PLATINUM')
+CREATE TABLE Huesped (
+	id_huesped INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	nombres_huesped VARCHAR(20) NOT NULL,
+	apellidos_huesped VARCHAR(50) NOT NULL,
+	categoria_huesped ENUM('WHITE', 'SILVER', 'GOD', 'PLATINUM')
 );
 
 CREATE TABLE Hotel (
 	id_hotel INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	nombre_hotel VARCHAR(20),
-	estrellas CHECK (Edad >= 1 AND Edad <= 5),
+	estrellas CHECK (estrellas >= 1 AND estrellas <= 5),
 );
 
 -- TODO: Falta revisar el campos y tablas intermidias que sean necesarias

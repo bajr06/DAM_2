@@ -1,0 +1,8 @@
+Número Ticket: 0
+------------------------------//------------------------------
+Identificador del Empleado que ha atendido: 1452
+Nombre del empleado: Teresa
+Codigo_Producto			Cantidad			Precio_Unitario
+1						5					 -1204.6499
+------------------------------//------------------------------
+Total: -1204.6499 €
