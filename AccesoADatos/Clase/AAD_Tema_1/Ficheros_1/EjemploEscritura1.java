@@ -1,6 +1,9 @@
 package Ficheros_1;
 
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class EjemploEscritura1 {
 	public static void main(String[] args) {

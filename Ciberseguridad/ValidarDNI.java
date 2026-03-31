@@ -62,5 +62,4 @@ public class ValidarDNI {
 		read.nextLine();
 		return num;
 	}
-
 }
