@@ -35,6 +35,4 @@ public class VehiculoInteligente {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-
-
 }

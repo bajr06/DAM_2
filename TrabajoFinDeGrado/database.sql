@@ -3,6 +3,7 @@ DROP TABLE IF EXISTS Recepcionista;
 DROP TABLE IF EXISTS Huesped;
 DROP TABLE IF EXISTS Hotel;
 
+
 CREATE TABLE Habitacion (
 	numero_habitacion INTEGER NOT NULL PRIMARY KEY,
 	categoria ENUM('ESTANDAR', 'PREMIUM', 'SUITES') NOT NULL,
