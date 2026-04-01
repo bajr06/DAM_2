@@ -35,4 +35,33 @@ public class VehiculoInteligente {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
+
+	public boolean isSensoresActivos() {
+		return sensoresActivos;
+	}
+	public void setSensoresActivos(boolean sensoresActivos) {
+		this.sensoresActivos = sensoresActivos;
+	}
+
+	public double getBateriaNivel() {
+		return bateriaNivel;
+	}
+	public void setBateriaNivel(double bateriaNivel) {
+		this.bateriaNivel = bateriaNivel;
+	}
+
+	public LocalDate getFechaActivacion() {
+		return fechaActivacion;
+	}
+	public void setFechaActivacion(LocalDate fechaActivacion) {
+		this.fechaActivacion = fechaActivacion;
+	}
+
+	public void mostrarInfo() {
+		IO.println("Identificador: " + id +
+		"\nModelo:" + modelo +
+		"\nSensores Activos: " + sensoresActivos +
+		"\nNivel de Bateria: " + bateriaNivel +
+		"\nFecha de Activación: " + fechaActivacion);
+	}
 }
