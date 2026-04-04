@@ -3,6 +3,7 @@ package Practica1;
 import java.io.IOException;
 import java.util.Random;
 
+
 class Jugador extends Thread {
 	/** Tipo de jugador: "cifras" o "letras". */
 	private final String tipo;

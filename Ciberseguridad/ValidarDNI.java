@@ -26,7 +26,7 @@ public class ValidarDNI {
 		}
 		
 		long resto =nDNI%23;
-		char[] letras_posibles = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
+		char [] letras_posibles = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 		
 		letra = letras_posibles[(int)resto];
 		
@@ -34,7 +34,7 @@ public class ValidarDNI {
 	}
 	
 	private static long toInt(String num) {
-		char[] num_separados = new char[8];
+		char [] num_separados = new char[8];
 		num_separados = num.toCharArray();
 		long num_largo=0;
 		for (int i = num_separados.length-1, j=0; i >= 0; i--, j++) {
