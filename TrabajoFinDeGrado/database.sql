@@ -24,14 +24,14 @@ CREATE TABLE Huesped (
 CREATE TABLE Ocupacion {
 	id_habitacion INT UNIQUE NOT NULL;
 	id_huesped INT UNIQUE NOT NULL;
-	-- TODO Preferible hacer todo esto en MySQL Workbench.
+	-- TODO: Preferible hacer todo esto en MySQL Workbench.
 }
 
 CREATE TABLE Trabajador (
 	id_trabajador INTEGER NOT NULL UNIQUE PRIMARY KEY AUTOINCREMENT,
 	nombres VARCHAR(50) NOT NULL,
 	apellidos VARCHAR(50) NOT NULL,
-	puesto ENUM(); -- TODO
+	puesto ENUM(); -- TODO: Revisar si se subdivide en varias tablas a la vez.
 );
 
 CREATE TABLE Hotel (
