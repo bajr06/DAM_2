@@ -34,6 +34,7 @@ CREATE TABLE Trabajador (
 	puesto ENUM(); -- TODO: Revisar si se subdivide en varias tablas a la vez.
 );
 
+
 CREATE TABLE Hotel (
 	id_hotel INTEGER NOT NULL UNIQUE PRIMARY KEY AUTOINCREMENT,
 	nombre_hotel VARCHAR(20),
