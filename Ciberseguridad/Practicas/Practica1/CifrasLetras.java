@@ -7,67 +7,66 @@ import java.io.IOException;
 
 public class CifrasLetras {
 	/** Recurso compartido: flujo de salida al fichero. */
-    public static FileOutputStream fosSalida;
+	public static FileOutputStream fosSalida;
 
-    /** Candado para proteger operaciones sobre fosSalida. */
-    public static final Object fosSalidaLock = new Object();
+	/** Candado para proteger operaciones sobre fosSalida. */
+	public static final Object fosSalidaLock = new Object();
 
-    /** Objeto sincronizador para wait/notify entre hilos y main. */
-    private static final Object sincronizador = new Object();
+	/** Objeto sincronizador para wait/notify entre hilos y main. */
+	private static final Object sincronizador = new Object();
 
-    /** Ganador del juego: "cifras" o "letras" cuando alguno complete primero. */
-    public static volatile String ganador = null;
+	/** Ganador del juego: "cifras" o "letras" cuando alguno complete primero. */
+	public static volatile String ganador = null;
 
-    /** Acceso controlado al sincronizador (permite mantenerlo private). */
-    public static Object getSincronizador() {
-        return sincronizador;
-    }
+	/** Acceso controlado al sincronizador (permite mantenerlo private). */
+	public static Object getSincronizador() {
+		return sincronizador;
+	}
 
-    public static void main(String[] args) {
-        try {
-            // Crear/limpiar fichero de salida
-            File f = new File("salida.txt");
-            if (f.exists()) f.delete();
-            fosSalida = new FileOutputStream(f, true); // append
+	public static void main(String[] args) {
+		try {
+			// Crear/limpiar fichero de salida
+			File f = new File("salida.txt");
+			if (f.exists()) f.delete();
+			fosSalida = new FileOutputStream(f, true); // append
 
-            // Instanciar los dos jugadores
-            Jugador cifras = new Jugador("cifras");
-            Jugador letras = new Jugador("letras");
+			// Instanciar los dos jugadores
+			Jugador cifras = new Jugador("cifras");
+			Jugador letras = new Jugador("letras");
 
-            // Lanzar los hilos
-            cifras.start();
-            letras.start();
+			// Lanzar los hilos
+			cifras.start();
+			letras.start();
 
-            // Hilo principal espera a que alguno termine sus 20 y notifique
-            synchronized (getSincronizador()) {
-                while (ganador == null) {
-                    getSincronizador().wait();
-                }
-            }
+			// Hilo principal espera a que alguno termine sus 20 y notifique
+			synchronized (getSincronizador()) {
+				while (ganador == null) {
+					getSincronizador().wait();
+				}
+			}
 
-            System.out.println("¡Tenemos un ganador!: " + ganador.toUpperCase());
+			System.out.println("¡Tenemos un ganador!: " + ganador.toUpperCase());
 
-            // Opcional: esperar a que ambos finalicen antes de cerrar el recurso
-            cifras.join();
-            letras.join();
+			// Opcional: esperar a que ambos finalicen antes de cerrar el recurso
+			cifras.join();
+			letras.join();
 
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            System.err.println("El hilo principal fue interrumpido.");
-        } catch (IOException e) {
-            System.err.println("Error inicializando el fichero salida.txt: " + e.getMessage());
-        } finally {
-            // Cerrar el recurso compartido
-            if (fosSalida != null) {
-                try {
-                    fosSalida.close();
-                } catch (IOException e) {
-                    System.err.println("Error cerrando salida.txt: " + e.getMessage());
-                }
-            }
-        }
-    }
-
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+			System.err.println("El hilo principal fue interrumpido.");
+		} catch (IOException e) {
+			System.err.println("Error inicializando el fichero salida.txt: " + e.getMessage());
+		} finally {
+			// Cerrar el recurso compartido
+			if (fosSalida != null) {
+				try {
+					fosSalida.close();
+				} catch (IOException e) {
+					System.err.println("Error cerrando salida.txt: " + e.getMessage());
+				}
+			}
+		}
+	}
 }
 
 /* Preguntas teóricas

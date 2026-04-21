@@ -4,7 +4,7 @@ class Persona (nombre : String, primerApellido : String, edad : Int) {
 	var nombre = nombre
 	var primerApellido = primerApellido
 	var edad = edad
-	*/
+*/
 
 class Persona(nombre : String, primerApellido : String, edad : Int) {}
 fun main() {

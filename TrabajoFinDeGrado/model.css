@@ -1,3 +1,30 @@
+/* Apartado del menú */
+#menu {
+	display: flex;
+	padding: 5px;
+}
+
+.button_menu {
+	padding: 10px;
+	/* color: white; /*  Color de la fuente de los botones */
+	/* background-color: #007bff; /* Color de fondo */
+	transition: background 0.3s; /* Animación */
+}
+
+.button_menu:hover {
+	background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+
+/* Zona de información sobre llegadas y salidas */
 #contenedor {
-    display: flex;
+	display: flex;
+}
+
+.subcontendor {
+	padding: 10px;
+}
+
+.titulo_informacion {
+	line-height: 0;
 }

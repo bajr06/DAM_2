@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title> Inicio </title>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="model.css">
+		<title> Gestor de Hoteles </title>
 	</head>
 	<body>
 		<div id="menu">
-			<a href=""> Inicio </a>
-			<a href=""> Habitaciones </a>
-			<a href=""> Usuarios </a>
+			<button class="button_menu"> Inicio </button>
+			<button class="button_menu"> Habitaciones </button>
+			<button class="button_menu"> Llegadas </button>
+			<button class="button_menu"> Salidas </button>
+			<button class="button_menu"> Historial </button>
 		</div>
-		
+		<hr> <!-- Línea delimitadora (separador) -->
+		<h1> Bienvenido, nombre_usuario </h1>
 		<div id="contenedor">
-			<div id="datos_salidas">
-
+			<div class="subcontendor"> 
+				<h2 class="titulo_informacion"> Llegadas previstas </h2>
+				<div> <!-- TODO: Revisar como se va a mostrar la información -->
+					<strong> Personas </strong>
+					<p> - - </p>
+				</div>
+				<div>
+					<strong> Desocupación </strong>
+					<p> - - </p>
+				</div>
 			</div>
-			<div id="datos_llegadas">
-
+			<div class="subcontendor">
+				<h2 class="titulo_informacion"> Salidas previstas </h2>
+				<div>
+					<strong> Personas </strong>
+					<p> - - </p>
+				</div>
+				<div>
+					<strong> Ocupación </strong>
+					<p> - - </p>
+				</div>
 			</div>
-		</div>
-		<div id="historial">
-
 		</div>
 	</body>
 </html>

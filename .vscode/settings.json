@@ -1,22 +1,24 @@
 {
-    "java.project.sourcePaths": [
-        "AccesoADatos/Clase/AAD_Tema_1",
-        "AccesoADatos/Clase/AAD_Tema_2",
-        "AccesoADatos/Clase/AAD_Tema_3",
-        "AccesoADatos/Ejercicios",
-        "AccesoADatos/Practicas/PracticaTema1",
-        "AccesoADatos/Practicas/PracticaTema2",
-        "Ciberseguridad/Practicas",
-        "DesarrolloDeInterfaces/Clase/DDI_Tema_3",
-        "DesarrolloDeInterfaces/Ejercicios",
-        "ProgramacionDeServiciosYProcesos/Clase",
-        "ProgramacionDeServiciosYProcesos/Ejercicios"
-    ],
-    
-    "java.project.referencedLibraries": [
-        ".librerias/jsoup-1.21.2-javadoc.jar",
-        ".librerias/jsoup-1.21.2-sources.jar",
-        ".librerias/jsoup-1.21.2.jar",
-        ".librerias/mysql-connector-j-9.5.0.jar"
-    ],
+	"java.project.sourcePaths": [
+		"AccesoADatos/Clase/AAD_Tema_1",
+		"AccesoADatos/Clase/AAD_Tema_2",
+		"AccesoADatos/Clase/AAD_Tema_3",
+		"AccesoADatos/Ejercicios",
+		"AccesoADatos/Practicas/PracticaTema1",
+		"AccesoADatos/Practicas/PracticaTema2",
+		"AccesoADatos/Recuperaciones/Recuperacion_Practica_JAVAIO/src",
+		"AccesoADatos/Recuperaciones/Recuperacion_Practica_BBDD_1/src",
+		"Ciberseguridad/Practicas",
+		"DesarrolloDeInterfaces/Clase/DDI_Tema_3",
+		"DesarrolloDeInterfaces/Ejercicios",
+		"ProgramacionDeServiciosYProcesos/Clase",
+		"ProgramacionDeServiciosYProcesos/Ejercicios"
+	],
+	
+	"java.project.referencedLibraries": [
+		".librerias/jsoup-1.21.2-javadoc.jar",
+		".librerias/jsoup-1.21.2-sources.jar",
+		".librerias/jsoup-1.21.2.jar",
+		".librerias/mysql-connector-j-9.5.0.jar"
+	],
 }

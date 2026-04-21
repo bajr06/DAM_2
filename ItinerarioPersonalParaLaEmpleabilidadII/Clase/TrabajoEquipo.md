@@ -7,7 +7,6 @@
 - Compromiso.
 - Cohesión.
 
-
 ### Acción
 - Impulsar.
 - Implementador.
