@@ -1,0 +1,93 @@
+body {
+	background-color: #ffffff;
+	font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+}
+		
+.navbar-custom {
+	background-color: #212529;
+	padding: 0.8rem 2rem;
+}
+
+.navbar-custom .back-link {
+	color: white;
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+
+.navbar-custom .page-title {
+	color: white;
+	font-size: 1.1rem;
+}
+
+/* Estilo de la lista */
+.room-row {
+	border-bottom: 1px solid #eee;
+	padding: 12px 0;
+	transition: background 0.2s;
+}
+
+.room-row:hover {
+	background-color: #f8f9fa;
+}
+
+.status-dot {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.bg-available {
+	background-color: #28a745;
+}
+
+.bg-occupied {
+	background-color: #dc3545;
+}
+
+.bg-dirty {
+	background-color: #ffc107;
+}
+	
+/* Etiquetas estilo imagen 1 */
+.hab-label {
+	color: #666;
+	font-size: 0.9rem;
+}
+
+.hab-number {
+	font-weight: bold;
+	font-size: 1.2rem;
+	 margin-right: 8px;
+}
+
+.hab-type {
+	color: #888;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+		
+/* Ajuste del acordeón */
+.accordion-button:not(.collapsed) {
+	background-color: #f8f9fa;
+	color: black;
+	box-shadow: none;
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+	border-color: rgba(0,0,0,.125);
+}
+
+@media print {
+	.no-print {
+		display: none;
+	}
+}
+
+.invoice-box {
+	border: 1px solid #eee;
+	padding: 30px;
+}

@@ -1,29 +1,23 @@
-/* Apartado del menú */
-#menu {
+body {
+	background-color: #f8f9fa;
 	display: flex;
-	padding: 5px;
+	align-items:
+	center;
+	height: 100vh;
 }
 
-.button_menu {
-	padding: 10px;
-	/* color: white; /*  Color de la fuente de los botones */
-	/* background-color: #007bff; /* Color de fondo */
-	transition: background 0.3s; /* Animación */
+.login-card {
+	width: 100%;
+	max-width: 400px;
+	padding: 15px;
+	margin: auto;
 }
 
-.button_menu:hover {
-	background-color: #0056b3; /* Color al pasar el mouse */
+.card-counter {
+	border-left: 5px solid #0d6efd;
+	transition: transform 0.3s;
 }
 
-/* Zona de información sobre llegadas y salidas */
-#contenedor {
-	display: flex;
-}
-
-.subcontendor {
-	padding: 10px;
-}
-
-.titulo_informacion {
-	line-height: 0;
+.card-counter:hover {
+	transform: scale(1.02);
 }
