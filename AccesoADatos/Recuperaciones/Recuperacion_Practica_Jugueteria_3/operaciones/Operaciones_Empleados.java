@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Operaciones_Empleados {
-
 	// Registrar un nuevo empleado
 	public boolean registrarEmpleado(Empleado empleado) {
 		String sql = "INSERT INTO Empleado (Nombre, Cargo, Fecha_ingreso) VALUES (?, ?, ?)";
